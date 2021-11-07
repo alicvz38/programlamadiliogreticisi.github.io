@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C Programlama Dili</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <a class="bg" href="../index.html">
+        <img src="../images/baslik.png" alt="Programlama Dili Öğreticisi">
+    </a>
+    <div class="containericerik">
+        <div class="konu">
+            <ul class="konular">
+                <li><a href="../C/c.html" class="this">C Dili Nedir?</a></li>
+                <li><a href="">C Giriş</a></li>
+                <li><a href="">Söz Dizimi</a></li>
+                <li><a href="">Yorum</a></li>
+                <li><a href="">Değişkenler</a></li>
+                <li><a href="">Veri Tipleri</a></li>
+                <li><a href="">Tip Dönüşümleri</a></li>
+                <li><a href="">Operatörler</a></li>
+                <li><a href="">Stringler</a></li>
+                <li><a href="">Math Kütüphanesi</a></li>
+                <li><a href="">Durum</a></li>
+                <li><a href="">if else</a></li>
+                <li><a href="">Switch case</a></li>
+                <li><a href="">While Döngüsü</a></li>
+                <li><a href="">For Döngüsü</a></li>
+                <li><a href="">Break Continue</a></li>
+                <li><a href="">Diziler</a></li>
+            </ul>
+        </div>
+        <div class="icerik">
+            <h1 class="baslik">C Dili Nedir?</h1>
+            <img src="../C/c.png" alt="">
+            <p>
+                AT&T Bell laboratuvarlarında, <b class="blue">Ken Thompson</b> ve <b class="blue">Dennis Ritchie</b>
+                tarafından <b class="blue">UNIX İşletim Sistemi</b>'ni
+                geliştirebilmek amacıyla B dilinden türetilmiş yapısal bir programlama dilidir. Geliştirilme tarihi
+                1972 olmasına rağmen yayılıp yaygınlaşması Brian Kernighan ve Dennis M. Ritchie tarafından yayımlanan
+                "C Programlama Dili" kitabından sonra hızlanmıştır. Günümüzde neredeyse tüm işletim sistemlerinin
+                (Microsoft Windows, GNU/Linux, *BSD, Minix) yapımında %95' lere varan oranda kullanılmış, hâlen daha
+                sistem, sürücü yazılımı, işletim sistemi modülleri ve hız gereken her yerde kullanılan oldukça yaygın
+                ve sınırları belirsiz oldukça keskin bir dildir. " Keskinliği, programcıya sonsuz özgürlüğün yanında
+                çok büyük hatalar yapabilme olanağı sağlamasıdır. Programlamanın gelişim süreciyle beraber
+                programlamanın
+                karmaşıklaşması, gereksinimlerin artması ile uygulama programlarında nesne yönelimliliğin ortaya
+                çıkmasından sonra C programcıları büyük ölçüde nesne yönelimliliği destekleyen C++ diline geçmişlerdir.
+            </p><br><br>
+            <h1 class="baslik" style="margin-bottom: 10px;">C Dilinin Geçmişi</h1>
+            <hr>
+            <h1 class="baslik">C Dilinin erken tarihi</h1>
+            <p>
+                C'nin ilk gelişme safhaları 1969 ile 1974 arasında AT&T Bell Laboratuvarları'nda gerçekleşti. Ritchie'ye
+                göre, en yaratıcı devre 1972 idi. Dilin pek çok özelliği <b>B</b> adlı bir dilden türediği için, yeni
+                dile "C" adı verildi. B dili yorumlanan bir dildi ve veri tipi desteği yoktu. Yeni donanımların farklı
+                veri
+                tiplerini desteklemesi, ve yorumlanan dillerin çalışma zamanında görece yavaş olması sebebi ile, C dili,
+                tip desteği eklenmiş ve derlenen B olarak geliştirildi.
+            </p>
+            <p>
+                "B" adının kökeni konusunda ise söylentiler değişik: Ken Thompson B'nin BCPL programlama dilinden
+                türediğini söylemektedir, ancak Thompson eşi Bonnie'nin onuruna adını Bon koyduğu bir programlama dili
+                de geliştirmiştir.
+            </p>
+            <p>
+                1973'e kadar C yeterince güçlü bir hale gelmiş ve ilk başta PDP-11/20 assembly dili ile yazılan UNIX'in
+                çekirdeğinin büyük kısmı C ile yeniden yazılmıştı.
+            </p>
+            <p>
+                Böylece UNIX, çekirdeği bir assembly dili ile yazılmayan ilk işletim sistemlerinden biri olmuştu.
+            </p>
+            <h1 class="baslik">C dilinin geçmişi</h1>
+            <p>
+                1978'de Ritchie ve Brian Kernighan The C Programming Language (C Programlama Dili) kitabının ilk
+                baskısını yayımladılar. C programcıları tarafından "K&R" olarak bilinen bu kitap, yıllar boyunca C
+                dilinin gayriresmî standardı olarak kullanıldı. C'nin bu sürümü bugün "K&R C" olarak adlandırılır. Bu
+                kitabın ikinci baskısı ise aşağıda anlatılan ANSI C standardını içerir.
+            </p>
+            <p>
+                K&R dilde şu değişiklikleri yaptı:
+            </p>
+
+            <ul class="yenilik">
+                <li><span class="mark consolas">struct</span> veri tipleri eklendi</li>
+                <li><span class="mark consolas">long int</span> veri tipi eklendi</li>
+                <li><span class="mark consolas">unsigned int</span> veri tipi eklendi</li>
+                <li><span class="mark consolas">=+</span> operatörü <span class="mark consolas">+=</span> olarak
+                    değiştirildi</li>
+            </ul>
+
+            <p>
+                K&R C genellikle tüm C derleyicilerinin desteklemek zorunda olduğu dilin en temel kısmı olarak kabul
+                edilir. Uzun yıllar boyunca, ANSI C'nin kabul edilişinden sonra bile, yüksek taşınabilirlik ((İngilizce)
+                portability) istendiğinde, K&R C, C programcıları tarafından "ortak payda" olarak kabul edilmiştir çünkü
+                bazı derleyiciler henüz ANSI C'yi desteklemek üzere güncellenmemişlerdi ve zaten iyi yazılmış bir K&R C
+                programı aynı zamanda ANSI C'yi de destekliyordu.
+            </p>
+            <p>
+                K&R C'nin yayımlanmasını izleyen yıllar içine dile AT&T'nin derleyicilerinin ve bazı başka bilgisayar
+                üreticileri tarafından desteklenen kimi "gayriresmî" özellikler eklendi. Bunların içinde aşağıdaki
+                özellikler de vardı:
+            </p>
+
+            <ul class="ekstra">
+                <li><span class="mark consolas">void</span> fonksiyonlar ve <span class="mark consolas">void *</span>
+                    veri tipi</li>
+                <li><span class="mark consolas">struct</span> ya da <span class="mark consolas">union</span> veri tipi
+                    döndüren fonksiyonlar</li>
+                <li>her bir <span class="mark consolas">struct</span>'ın alan adları için ayrı bir ad alanı</li>
+                <li><span class="mark consolas">struct</span> veri tipleri için atama</li>
+                <li>bir nesneyi yazmaya karşı korumalı yapmak için <span class="mark consolas">const</span> anahtar
+                    sözcüğü</li>
+                <li>standart bir C kütüphanesi</li>
+                <li>enumeration'lar</li>
+                <li>single-precision <span class="mark consolas">float</span> tipi</li>
+            </ul>
+            <h1 class="baslik">ANSI C ve ISO C dilleri</h1>
+            <p>1970'lerin sonunda C, en çok kullanılan mikrobilgisayar dili olarak BASIC'in önüne geçmeye başladı.
+                1980'lerde ise, IBM PC ile kullanılmak üzere benimsenmesiyle birlikte popülaritesi iyice artmaya
+                başladı. Aynı zamanda, Bell Laboratuvarları'nda Bjarne Stroustrup ve iş arkadaşları C'ye nesneye yönelim
+                eklemek üzere çalışmaya başlamışlardı. C bugün UNIX dünyasında en çok kullanılan dil olarak kalırken,
+                Stroustrup'un geliştirip C++ adını verdiği dil Microsoft Windows işletim sisteminde en önemli dil oldu.
+            </p>
+            <p>1983'te Amerikan Ulusal Standartlar Enstitüsü (ANSI) bir C standardı oluşturmak için bir kurul oluşturdu.
+                Uzun ve yorucu bir çalışmadan sonra, bu kurul standardı 1989'da tamamladı ve standart ANSI X3.159-1989
+                "Programming Language C (C Programlama Dili)" olarak yayımlandı. Dilin bu versiyonu genellikle ANSI C
+                olarak adlandırılır. 1990'da bu standart, küçük değişikliklerle Uluslararası Standartlar Örgütü (ISO)
+                tarafından da benimsenip ISO/IEC 9899:1990 olarak yayımlandı.
+            </p>
+            <p>ANSI C'yi oluşturmanın amaçlarıdan biri K&R C'yi içeren ve dile sonradan katılan "gayriresmî" özellikleri
+                de dile katan bir standart oluşturmaktı. Standart k fonksiyon prototiplerini ve daha yetenekli bir
+                önişlemciyi de standarda ekledi.
+            </p>
+            <p>Bugün artık ANSI C neredeyse tüm derleyiciler tarafından desteklenmektedir. Günümüzde yazılmakta olan C
+                programlarının çoğunluğu ANSI C standardına uygun olarak yazılmaktadır. Yalnızca standart C kullanılarak
+                yazılmış bir program, standarda uyumlu her derleyici ile doğru bir biçimde derlenip çalıştırılabilir.
+                Ancak, standart olmayan kütüphaneler kullanılarak yazılmış programlar belli bir platform ya da derleyici
+                gerektirebilirler...
+            </p>
+            <h1 class="baslik">C99</h1>
+            <p>
+                ANSI standartlaştırma işleminden sonra C dili uzun bir süre oldukça sabit kaldı, ancak C++ gelişmeyi
+                sürdürdü. Buna bağlı olarak, 1990'ların sonunda ISO standardı güncellendi ve 1999'da ISO 9899:1999
+                olarak yayımlandı. 2000 yılının Mart'ında ise, "C99" olarak bilinen bu standart ANSI tarafından da
+                benimsendi.
+            </p>
+            <p>
+                C99'un yeni özellikleri şöyle özetlenebilir:
+            </p>
+            <ul class="kullanim">
+                <li>for ve bunun gibi yineleme ifadelerinde parantez içi ilk deklarasyonlara izin verilmesi
+                    <br>Örneğin <span class="mark consolas">for(int i=0; i<span class="isaret"></span>10; i++)</span>
+                    deyimi c99 da geçerli iken c89 da geçerli değildir...
+                </li>
+                <li>inline fonksiyonlar</li>
+                <li>C++'da olduğu gibi artık değişkenler programın herhangi bir yerinde tanımlanabilirler</li>
+                <li><span class="mark consolas">long long int</span>, <span class="mark consolas">boolean</span>, <span class="mark consolas">complex</span> gibi yeni veri tipleri</li>
+                <li>değişken uzunluğa sahip diziler</li>
+                <li>C++'dan alınan, <span class="mark consolas">//</span> ile başlayan tek satırlık program içi açıklamalar</li>
+                <li><span class="mark consolas">snprintf()</span> gibi yeni kütüphane fonksiyonları</li>
+                <li><span class="mark consolas">stdint.h</span> gibi yeni başlık dosyaları</li>
+            </ul>
+            <h1 class="baslik">Kaynakça</h1>
+            <a href="https://tr.wikipedia.org/wiki/C_(programlama_dili)">https://tr.wikipedia.org/wiki/C_(programlama_dili)</a>
+        </div>
+    </div>
+    <footer>2021-2021 &copy Bu Site Ali CEVİZ Tarafından Geliştirilmektedir.</footer>
+</body>
+
+</html>
