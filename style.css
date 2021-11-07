@@ -247,7 +247,7 @@ p::before{
 }
 @media screen and (max-width: 700px){
     .konular a{
-        font-size: 10px;
+        font-size: 9px;
     }
     
     .icerik .baslik{
