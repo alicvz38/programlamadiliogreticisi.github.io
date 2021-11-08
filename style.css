@@ -198,6 +198,10 @@ p::before{
 .next{
     float: right;
 }
+
+.disabled{
+    pointer-events: none;
+}
 @media screen and (max-width: 1600px){
     .diller li{
         width: 60%;
@@ -255,6 +259,11 @@ p::before{
         font-size: 16px;
         line-height: 20px;
     }
+    .back, .next{
+        padding: 4px 8px;
+        font-size: 16px;
+        margin: 25px;
+    }
 }
 @media screen and (max-width: 800px){
     .bg img{
@@ -298,6 +307,11 @@ p::before{
     }
     .icerik a{
         font-size: 12px;
+    }
+    .back, .next{
+        padding: 3px 6px;
+        font-size: 12px;
+        margin: 15px;
     }
 }
 @media screen and (max-width: 600px){
