@@ -7,47 +7,52 @@
 a{
     text-decoration: none;
 }
+html{
+    font-size: 10px;
+}
 body{
     text-align: center;
-    margin: 10px auto;
+    margin: 1rem auto;
 }
 img{
-    border-radius: 10px;
+    border-radius: 1rem;
     width: 83%;
 }
 .container{
     width: 83%;
-    margin: 10px auto;
+    margin: 1rem auto;
     background: #fff;
     box-shadow: 2px 2px 6px 2px rgba(0,0,0,0.5);
-    padding: 25px;
+    padding: 2.5rem;
 }
 .container h1{
-    padding: 15px;
+    padding: 1.5rem;
     color: red;
     font-family: arial;
+    font-size: 4rem;
 }
 .container h2{
     text-align: center;
-    padding: 15px;
+    padding: 1.5rem;
     color: blue;
+    font-size: 3.2rem;
 }
 
 .diller li{
-    margin: 25px;
+    margin: 2.5rem;
     display:inline-block;
     width: 50%;
 }
 .diller li a{
     display: inline-block;
     width: 100%;
-    height: 100px;
-    line-height: 100px;
+    height: 10rem;
+    line-height: 10rem;
     color: rgba(0,0,0,0.5);
     background: lightblue;
-    font-size: 32px;
+    font-size: 3.2rem;
     font-family: consolas;
-    border-radius: 50px;
+    border-radius: 5rem;
     box-shadow: 2px 2px 6px 2px rgba(0,0,0,0.5);
     transition: 300ms;
 }
@@ -59,271 +64,54 @@ img{
 }
 
 footer{
+    font-size: 1.8rem;
     background: black;
     color: white;
-    height: 75px;
+    height: 7.5rem;
     width: 100%;
-    line-height: 75px;
-    margin-top: 25px;
-    margin-bottom: -50px;
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
-}
-
-.containericerik{
-    display: flex;
-    padding: 10px;
-    box-shadow: 2px 2px 6px 2px rgba(0,0,0,0.25);
-    width: 83%;
-    margin: 10px auto;
-}
-
-.containericerik .konu{
-    width: 25%;
-    border-right: 1px solid rgba(0,0,0,0.25);
-}
-.containericerik .icerik{
-    width: 75%;
-}
-
-.containericerik .konular li a{
-    display:block;
-    width: 90%;
-    height: 40px;
-    line-height: 40px;
-    border-radius: 5px;
-    background: #fff;
-    margin: 15px auto;
-    color: #000;
-    box-shadow: 2px 2px 5px 2px rgba(0,0,0,0.25);
-    transition: 300ms;
-}
-.containericerik .konular li a:hover{
-    color:white;
-    background: black;
-}
-.containericerik .konular li .this{
-    color:white;
-    background: black;
-}
-.containericerik .icerik img{
-    float: left;
-    margin: 25px 50px;
-    width: 70px;
-}
-.baslik{
-    text-align: left;
-    margin: 25px 50px;
-    font-family: arial;
-    color: red;
-    font-weight: bold;
-    font-size: 32px;
-}
-p{
-    text-align:justify;
-    margin: 10px 50px;
-    font-family: Arial;
-    color:black;
-    font-size: 20px;
-}
-p::before{
-    content:"";
-    display: block;
-    width: 50px;
-    height: 10px;
-    float:left;
-}
-.red{
-    color:red;
-}
-.green{
-    color: green;
-}
-.blue{
-    color: blue;
-}
-
-.consolas{
-    font-family: Consolas;
-}
-.mantik li, .yenilik li, .ekstra li, .kullanim li{
-    list-style-type:disc;
-    text-align:justify;
-    margin: 10px 100px;
-    font-family: Arial;
-    color:black;
-    font-size: 20px;
-    line-height: 30px;
-}
-.icerik a{
-    display: block;
-    text-align: left;
-    margin: 10px 20%;
-    font-family: Arial;
-    color:blue;
-    font-size: 20px;
-}
-.icerik a:hover{
-    text-decoration: underline;
-}
-
-.mark{
-    padding: 3px;
-    background: #cde;
-    border-radius: 5px;
-    box-shadow: 1px 1px 3px 1px rgba(0,0,0,0.25);
-}
-.isaret::after{
-    content: "<";
-}
-.back, .next{
-    box-shadow: 2px 2px 5px 2px rgba(0,0,0,0.5);
-    color: black;
-    border-radius: 10px;
-    margin: 50px;
-    line-height: 40px;
-    font-size: 20px;
-    padding: 5px 10px;
-    font-family: Arial;
-    transition: 300ms;
-}
-.back:hover, .next:hover{
-    background:rgba(0,0,0,0.25);
-    box-shadow: 2px 2px 5px 2px rgba(0,0,0,0.75);
-
-}
-.back{
-    float: left;
-}
-.next{
-    float: right;
-}
-
-.disabled{
-    pointer-events: none;
+    line-height: 7.5rem;
+    margin-top: 2.5rem;
+    margin-bottom: -5rem;
+    border-top-left-radius: 2.5rem;
+    border-top-right-radius: 2.5rem;
 }
 @media screen and (max-width: 1600px){
-    .diller li{
-        width: 60%;
+    html{
+        font-size: 9px;
     }
-    .diller li a{
-        height: 90px;
-        line-height: 90px;
-        font-size: 29px;
+}
+@media screen and (max-width: 1325px){
+    html{
+        font-size: 8px;
     }
 }
 @media screen and (max-width: 1280px){
-    .bg img{
-        width: 95%;
-    }
-    .container, .containericerik{
-        width: 95%;
-    }
-    .diller li{
-        width: 70%;
-    }
-    .diller li a{
-        height: 80px;
-        line-height: 80px;
-        font-size: 26px;
+    html{
+        font-size: 7px;
     }
 }
-
+@media screen and (max-width: 975px){
+    html{
+        font-size: 6px;
+    }
+}
 @media screen and (max-width: 960px){
-    h1{
-        font-size: 24px;
-    }
-    h2{
-        font-size: 20px;
-    }
-    .diller li{
-        width: 85%;
-    }
-    .diller li a{
-        height: 70px;
-        line-height: 70px;
-        font-size: 23px;
-    }
-    .konular a{
-        font-size: 16px;
-    }
-    .icerik .baslik{
-        font-size: 24px;
-    }
-    .icerik p{
-        font-size: 16px;
-        margin: 20px;
-    }
-    .icerik ul li{
-        margin: 10px 50px;
-        font-size: 16px;
-        line-height: 20px;
-    }
-    .back, .next{
-        padding: 4px 8px;
-        font-size: 16px;
-        margin: 25px;
+    html{
+        font-size: 5px;
     }
 }
 @media screen and (max-width: 800px){
-    .bg img{
-        width: 100%;
-    }
-    .container, .containericerik{
-        width: 100%;
-    }
-    h1{
-        font-size: 20px;
-    }
-    h2{
-        font-size: 16px;
-    }
-    .diller li a{
-        height: 60px;
-        line-height: 60px;
-        font-size: 20px;
-    }
-    .icerik a{
-        font-size: 16px;
+    html{
+        font-size: 4px;
     }
 }
 @media screen and (max-width: 700px){
-    .konular a{
-        font-size: 9px;
-    }
-    
-    .icerik .baslik{
-        font-size: 15px;
-    }
-    .icerik p{
-        font-size: 12px;
-    }
-    .icerik ul li{
-        font-size: 12px;
-        line-height: 15px;
-    }
-    .mark{
-        padding: 1px;
-    }
-    .icerik a{
-        font-size: 12px;
-    }
-    .back, .next{
-        padding: 3px 6px;
-        font-size: 12px;
-        margin: 15px;
+    html{
+        font-size: 3px;
     }
 }
 @media screen and (max-width: 600px){
-    h1{
-        font-size: 15px;
-    }
-    h2{
-        font-size: 12px;
-    }
-    .diller li a{
-        height: 50px;
-        line-height: 50px;
-        font-size: 17px;
+    html{
+        font-size: 2px;
     }
 }
