@@ -6,18 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>C Programlama Dili</title>
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="c.css">
 </head>
 
 <body>
-    <a class="bg" href="../index.html">
+    <a class="anaBaslik" href="../index.html">
         <img src="../images/baslik.png" alt="Programlama Dili Öğreticisi">
     </a>
-    <div class="containericerik">
-        <div class="konu">
+    <div class="icerik">
+        <div class="left">
             <ul class="konular">
-                <li><a href="../C/c.html" class="this">C Dili Nedir?</a></li>
-                <li><a href="../C/c-giris.html">C Giriş</a></li>
+                <li><a href="../index.html">Ana Sayfa</a></li>
+                <li><a href="c.html" class="this">C Dili Nedir?</a></li>
+                <li><a href="c-giris.html">C Giriş</a></li>
                 <li><a href="">Söz Dizimi</a></li>
                 <li><a href="">Yorum</a></li>
                 <li><a href="">Değişkenler</a></li>
@@ -35,9 +36,9 @@
                 <li><a href="">Diziler</a></li>
             </ul>
         </div>
-        <div class="icerik">
-            <h1 class="baslik">C Dili Nedir?</h1>
-            <img src="../C/c.png" alt="">
+        <div class="right">
+            <h1>C Dili Nedir?</h1>
+            <img src="c.png" alt="">
             <p>
                 AT&T Bell laboratuvarlarında, <b class="blue">Ken Thompson</b> ve <b class="blue">Dennis Ritchie</b>
                 tarafından <b class="blue">UNIX İşletim Sistemi</b>'ni
@@ -52,9 +53,9 @@
                 karmaşıklaşması, gereksinimlerin artması ile uygulama programlarında nesne yönelimliliğin ortaya
                 çıkmasından sonra C programcıları büyük ölçüde nesne yönelimliliği destekleyen C++ diline geçmişlerdir.
             </p><br><br>
-            <h1 class="baslik" style="margin-bottom: 10px;">C Dilinin Geçmişi</h1>
+            <h1 style="margin-bottom: 1rem;">C Dilinin Geçmişi</h1>
             <hr>
-            <h1 class="baslik">C Dilinin erken tarihi</h1>
+            <h1>C Dilinin erken tarihi</h1>
             <p>
                 C'nin ilk gelişme safhaları 1969 ile 1974 arasında AT&T Bell Laboratuvarları'nda gerçekleşti. Ritchie'ye
                 göre, en yaratıcı devre 1972 idi. Dilin pek çok özelliği <b>B</b> adlı bir dilden türediği için, yeni
@@ -75,7 +76,7 @@
             <p>
                 Böylece UNIX, çekirdeği bir assembly dili ile yazılmayan ilk işletim sistemlerinden biri olmuştu.
             </p>
-            <h1 class="baslik">C dilinin geçmişi</h1>
+            <h1>C dilinin geçmişi</h1>
             <p>
                 1978'de Ritchie ve Brian Kernighan The C Programming Language (C Programlama Dili) kitabının ilk
                 baskısını yayımladılar. C programcıları tarafından "K&R" olarak bilinen bu kitap, yıllar boyunca C
@@ -86,7 +87,7 @@
                 K&R dilde şu değişiklikleri yaptı:
             </p>
 
-            <ul class="yenilik">
+            <ul>
                 <li><span class="mark consolas">struct</span> veri tipleri eklendi</li>
                 <li><span class="mark consolas">long int</span> veri tipi eklendi</li>
                 <li><span class="mark consolas">unsigned int</span> veri tipi eklendi</li>
@@ -107,7 +108,7 @@
                 özellikler de vardı:
             </p>
 
-            <ul class="ekstra">
+            <ul>
                 <li><span class="mark consolas">void</span> fonksiyonlar ve <span class="mark consolas">void *</span>
                     veri tipi</li>
                 <li><span class="mark consolas">struct</span> ya da <span class="mark consolas">union</span> veri tipi
@@ -120,7 +121,7 @@
                 <li>enumeration'lar</li>
                 <li>single-precision <span class="mark consolas">float</span> tipi</li>
             </ul>
-            <h1 class="baslik">ANSI C ve ISO C dilleri</h1>
+            <h1>ANSI C ve ISO C dilleri</h1>
             <p>1970'lerin sonunda C, en çok kullanılan mikrobilgisayar dili olarak BASIC'in önüne geçmeye başladı.
                 1980'lerde ise, IBM PC ile kullanılmak üzere benimsenmesiyle birlikte popülaritesi iyice artmaya
                 başladı. Aynı zamanda, Bell Laboratuvarları'nda Bjarne Stroustrup ve iş arkadaşları C'ye nesneye yönelim
@@ -143,7 +144,7 @@
                 Ancak, standart olmayan kütüphaneler kullanılarak yazılmış programlar belli bir platform ya da derleyici
                 gerektirebilirler...
             </p>
-            <h1 class="baslik">C99</h1>
+            <h1>C99</h1>
             <p>
                 ANSI standartlaştırma işleminden sonra C dili uzun bir süre oldukça sabit kaldı, ancak C++ gelişmeyi
                 sürdürdü. Buna bağlı olarak, 1990'ların sonunda ISO standardı güncellendi ve 1999'da ISO 9899:1999
@@ -153,7 +154,7 @@
             <p>
                 C99'un yeni özellikleri şöyle özetlenebilir:
             </p>
-            <ul class="kullanim">
+            <ul>
                 <li>for ve bunun gibi yineleme ifadelerinde parantez içi ilk deklarasyonlara izin verilmesi
                     <br>Örneğin <span class="mark consolas">for(int i=0; i<span class="isaret"></span>10; i++)</span>
                     deyimi c99 da geçerli iken c89 da geçerli değildir...
@@ -168,13 +169,14 @@
                 <li><span class="mark consolas">snprintf()</span> gibi yeni kütüphane fonksiyonları</li>
                 <li><span class="mark consolas">stdint.h</span> gibi yeni başlık dosyaları</li>
             </ul>
-            <h1 class="baslik">Kaynakça</h1>
+            <hr>
+            <h1>Kaynakça</h1>
             <a
                 href="https://tr.wikipedia.org/wiki/C_(programlama_dili)">https://tr.wikipedia.org/wiki/C_(programlama_dili)</a>
-                <a href="">
-                    <div class="back disabled">Önceki</div>
-                </a>
-            <a href="../C/c-giris.html">
+            <a href="">
+                <div class="back disabled">Önceki</div>
+            </a>
+            <a href="c-giris.html">
                 <div class="next">Sonraki</div>
             </a>
         </div>
