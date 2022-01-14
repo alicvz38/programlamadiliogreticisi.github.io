@@ -1,0 +1,260 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+.red{
+    color:red;
+}
+.green{
+    color: green;
+}
+.blue{
+    color: blue;
+}
+.magenta{
+    color:magenta;
+}
+
+.consolas{
+    font-family: Consolas;
+}
+html{
+    font-size: 10px;
+}
+body{
+    text-align: center;
+    margin: 1rem auto;
+}
+img{
+    border-radius: 1rem;
+    width: 83%;
+}
+.icerik{
+    display: flex;
+    padding: 1rem;
+    box-shadow: 0.2rem 0.2rem 0.6rem 0.2rem rgba(0,0,0,0.25);
+    width: 83%;
+    margin: 1rem auto;
+}
+.diller{
+    margin: 0 auto;
+    width: 83%;
+}
+.diller li{
+    display: inline-block;
+    width: 18%;
+}
+.diller li a{
+    font-size: 1.8rem;
+    display:block;
+    height: 4rem;
+    line-height: 4rem;
+    border-radius: 0.5rem;
+    background: #fff;
+    margin: 1.5rem 1rem;
+    color: #000;
+    box-shadow: 0.2rem 0.2rem 0.5rem 0.2rem rgba(0,0,0,0.25);
+    transition: 300ms;
+
+}
+.diller li a:hover{
+    
+    color:white;
+    background: black;
+}
+.diller li .this{
+    color:white;
+    background: black;
+}
+.left{
+    width: 25%;
+    border-right: 0.1rem solid rgba(0,0,0,0.25);
+}
+.icerik ul li a{
+    font-size: 1.8rem;
+    display:block;
+    width: 90%;
+    height: 4rem;
+    line-height: 4rem;
+    border-radius: 0.5rem;
+    background: #fff;
+    margin: 1.5rem auto;
+    color: #000;
+    box-shadow: 0.2rem 0.2rem 0.5rem 0.2rem rgba(0,0,0,0.25);
+    transition: 300ms;
+}
+.icerik ul li a:hover{
+    color:white;
+    background: black;
+}
+.icerik ul li .this{
+    color:white;
+    background: black;
+}
+.icerik img{
+    float: left;
+    margin: 2.5rem 5rem;
+    width: 25rem;
+}
+.right{
+    width: 75%;
+}
+h1{
+    text-align: left;
+    margin: 2.5rem 5rem;
+    font-family: arial;
+    color: red;
+    font-weight: bold;
+    font-size: 3.2rem;
+}
+p{
+    text-align:justify;
+    margin: 1rem 5rem;
+    font-family: Arial;
+    color:black;
+    font-size: 2rem;
+}
+p::before{
+    content:"";
+    display: block;
+    width: 5rem;
+    height: 1rem;
+    float:left;
+}
+.right ul li{
+    list-style-type:disc;
+    text-align:justify;
+    margin: 1rem 10rem;
+    font-family: Arial;
+    color:black;
+    font-size: 2rem;
+    line-height: 3rem;
+}
+.right a{
+    display: block;
+    text-align: left;
+    margin: 1rem 20%;
+    font-family: Arial;
+    color:blue;
+    font-size: 2rem;
+}
+.right a:hover{
+    text-decoration: underline;
+}
+.mark{
+    padding: 0.3rem;
+    background: #cde;
+    border-radius: 0.5rem;
+    box-shadow: 0.1rem 0.1rem 0.3rem 0.1rem rgba(0,0,0,0.25);
+}
+.back, .next{
+    box-shadow: 0.2rem 0.2rem 0.5rem 0.2rem rgba(0,0,0,0.5);
+    color: black;
+    border-radius: 1rem;
+    margin: 5rem;
+    line-height: 4rem;
+    font-size: 2rem;
+    padding: 0.5rem 1rem;
+    font-family: Arial;
+    transition: 300ms;
+}
+.back:hover, .next:hover{
+    background:rgba(0,0,0,0.25);
+    box-shadow: 0.2rem 0.2rem 0.5rem 0.2rem rgba(0,0,0,0.75);
+
+}
+.back{
+    float: left;
+}
+.next{
+    float: right;
+}
+.disabled{
+    pointer-events: none;
+}
+.cizgi{
+    text-align: center;
+    font-size: 2.4rem;
+}
+.cizgi .sol{
+    float: left;
+}
+.cizgi .cent{
+    float: left;
+    padding: 1.5rem;
+    margin: 0 3.5rem;
+    background: rgba(0,0,0,0.25);
+    display: block;
+    border-radius: 50%;
+}
+.cizgi .sag{
+    float: right;
+}
+.cizgi .sol, .cizgi .sag{
+    border: 0.1rem solid rgba(0,0,0,0.25);
+    width: 45%;
+    position: relative;
+    top: 1.5rem;
+}
+footer{
+    font-size: 1.8rem;
+    background: black;
+    color: white;
+    height: 7.5rem;
+    width: 100%;
+    line-height: 7.5rem;
+    margin-top: 2.5rem;
+    margin-bottom: -5rem;
+    border-top-left-radius: 2.5rem;
+    border-top-right-radius: 2.5rem;
+}
+@media screen and (max-width: 1600px){
+    html{
+        font-size: 9px;
+    }
+}
+@media screen and (max-width: 1325px){
+    html{
+        font-size: 8.5px;
+    }
+}
+@media screen and (max-width: 1280px){
+    html{
+        font-size: 8px;
+    }
+}
+@media screen and (max-width: 975px){
+    html{
+        font-size: 7.5px;
+    }
+}
+@media screen and (max-width: 960px){
+    html{
+        font-size: 7px;
+    }
+}
+@media screen and (max-width: 800px){
+    html{
+        font-size: 6.5px;
+    }
+}
+@media screen and (max-width: 700px){
+    html{
+        font-size: 6px;
+    }
+}
+@media screen and (max-width: 600px){
+    html{
+        font-size: 4.5px;
+    }
+}
+@media screen and (max-width: 500px){
+    html{
+        font-size: 3px;
+    }
+}
