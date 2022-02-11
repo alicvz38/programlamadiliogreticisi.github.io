@@ -9,15 +9,19 @@ a{
 }
 .red{
     color:red;
+    display: inline-block;
 }
 .green{
     color: green;
+    display: inline-block;
 }
 .blue{
     color: blue;
+    display: inline-block;
 }
 .magenta{
     color:magenta;
+    display: inline-block;
 }
 
 .consolas{
@@ -103,6 +107,7 @@ img{
 }
 .right{
     width: 75%;
+    padding: 1rem;
 }
 h1{
     text-align: left;
@@ -145,6 +150,63 @@ p::before{
 }
 .right a:hover{
     text-decoration: underline;
+}
+.kodAlani{
+    display: block;
+    margin: 2rem auto;
+    font-size: 2rem;
+    font-family: consolas;
+    text-align: left;
+    width: 85%;
+    padding: 2.5rem;
+    box-shadow: 0.3rem 0.3rem 0.6rem 0.3rem rgba(0,0,250,0.25) inset, 0.3rem 0.3rem 0.6rem 0.3rem rgba(0,0,250,0.25);
+    border-radius: 2.5rem;
+}
+.kodCiktisi{
+    display: block;
+    margin: 2rem auto;
+    font-size: 2rem;
+    font-family: consolas;
+    text-align: left;
+    width: 85%;
+    padding: 2.5rem;
+    line-height: 5rem;
+    box-shadow: 0.2rem 0.2rem 0.5rem 0.2rem rgba(250,0,0,0.25) inset, 0.2rem 0.2rem 0.5rem 0.2rem rgba(250,0,0,0.25);
+    border-radius: 2.5rem;
+}
+.kodAciklamasi{
+    display: block;
+    margin: 2rem auto;
+    font-size: 2rem;
+    font-family: consolas;
+    text-align: left;
+    width: 85%;
+    padding: 2.5rem;
+    line-height: 5rem;
+    box-shadow: 0.3rem 0.3rem 0.6rem 0.3rem rgba(0,250,0,0.25) inset, 0.3rem 0.3rem 0.6rem 0.3rem rgba(0,250,0,0.25);
+    border-radius: 2.5rem;
+}
+.kodAciklamasi .aciklama{
+    line-height: 3rem;
+}
+.kodAciklamasi .aciklamalar{
+    margin-top: 1rem;
+}
+.kodAciklamasi .aciklamalar::before{
+    content:"";
+    display: block;
+    width: 5rem;
+    height: 1rem;
+    float:left;
+}
+.kodAciklamasi .cizgi{
+    width: 50%;
+    margin: 2rem auto;
+    border: 1px solid rgba(0,250,0, 0.25);
+}
+.bos{
+    display: inline-block;
+    padding-right: 4rem;
 }
 .back, .next{
     box-shadow: 0.2rem 0.2rem 0.5rem 0.2rem rgba(0,0,0,0.5);

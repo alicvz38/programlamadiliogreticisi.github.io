@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Söz dizimi</title>
+    <link rel="stylesheet" href="c++.css">
+</head>
+<body>
+    <a class="anaBaslik" href="../index.html">
+        <img src="../images/baslik.png" alt="Programlama Dili Öğreticisi">
+    </a>
+    <div class="ust"><ul class="diller">
+        <li><a href="../index.html">Ana Sayfa</a></li>
+        <li><a href="../C/c.html">C</a></li>
+        <li><a href="../C++/c++.html" class = "this disabled">C++</a></li>
+        <li><a href="../Java/java.html">Java</a></li>
+        <li><a href="../Python/python.html">Python</a></li>
+    </ul></div>
+    <div class="icerik">
+        <div class="left">
+            <ul class="konular">
+                <li><a href="c++.html">C++ Dili Nedir?</a></li>
+                <li><a href="c++-giris.html">C++ Giriş</a></li>
+                <li><a href="sozDizimi.html" class="this disabled">Söz Dizimi</a></li>
+                <li><a href="yorum.html">Yorum Satırı</a></li>
+                <li><a href="">Değişkenler</a></li>
+                <li><a href="">Veri Tipleri</a></li>
+                <li><a href="">Tip Dönüşümleri</a></li>
+                <li><a href="">Operatörler</a></li>
+                <li><a href="">Stringler</a></li>
+                <li><a href="">Math Kütüphanesi</a></li>
+                <li><a href="">Durum</a></li>
+                <li><a href="">if else</a></li>
+                <li><a href="">Switch case</a></li>
+                <li><a href="">While Döngüsü</a></li>
+                <li><a href="">For Döngüsü</a></li>
+                <li><a href="">Break Continue</a></li>
+                <li><a href="">Diziler</a></li>
+            </ul>
+        </div>
+        <hr>
+        <div class="right">
+            <h1>C++ Dilinde Söz Dizimi Nedir?</h1>
+            <p>
+                Söz dizimi C++ yazarken uymanız gereken yazım kurallarıdır. Söz Dizimi dilden dile değişiklik 
+                göstersede çoğu kökünde birbirine benzer. bu sayede bir dili öğrendikten sonra 2. bir dil 
+                öğrenmek daha kolay hale gelir.
+            </p>
+            <h1>Süslü Parentez(<div class="blue">{ }</div>)</h1>
+            <p>
+                <b class="blue">Süslü parantezler</b> blokları yani <b class="blue">metotları</b> temsil etmek için kullanılır.
+                Her <b class="blue">süslü parantezin</b> arasına yazılan kodun kendine ait dünyası vardır ve siz istemediğiniz sürece dışarıyı etkileyemez ve etkilenemez. 
+                Örneğin içeride yaptığınız bir toplama işlemi dışarıdaki sonucu değiştirmez. Yani o <b class="blue">metodu</b> çağırmadığımız sürece hiç bir işlevi yoktur.
+            </p>
+            <div class="kodAlani">
+                <div class="blue">{</div> <br>
+                    <div class="bos"></div> <div class="green">// Blok Alanı</div> <br>
+                <div class="blue">}</div>
+            </div>
+            <h1>Noktalı Virgül(;)</h1>
+            <p>
+                <b class="red">Noktalı virgül</b> satır sonuna gelindiğini ifade eder ve o satırı bitirmek için kullanılır. <b class="blue">Metotların</b> ve eklenen <b class="green">kütüphanelerin</b> sonuna 
+                <b class="red">noktalı virgül</b> konulmaz.
+            </p>
+            <div class="kodAlani">
+                <div class="green">
+                    #include &ltiostrem&gt
+                </div><br>
+                using namespace <div class="red">std</div><div class="red">;</div>
+                <br><br>
+                int <div class="blue"><b>main()</b></div><div class="blue">{</div><br>
+                    <div class="bos"></div><div class="bos"></div><div class="magenta">cout</div> &lt&lt <div class="blue">"Merhaba Dunya"</div><div class="red"></div> &lt&lt <div class="magenta"> endl</div>;<br><br>
+                    <div class="bos"></div><div class="red">int</div> <div class="blue">deger</div> = <div class="blue">5</div><div class="red">;</div><br>
+                    <div class="bos"></div><div class="red">int</div> <div class="blue">sayi</div> = <div class="blue">deger</div> * <div class="blue">5</div><div class="red">;</div><br>
+                    <div class="bos"></div><div class="magenta">cout</div> &lt&lt <div class="blue">"Belirlenen Değer : "</div><div class="red"></div> &lt&lt deger &lt&lt <div class="blue">" Sayı : "</div> &lt&lt sayi &lt&lt <div class="magenta"> endl</div>;<br><br>
+                <div class="blue">}</div>
+            </div>
+            <p>
+                Yukarıda gördüğünüz gibi değer atamalarında, işlemlerde ve ekran çıktılarının sonunda <b class="red"> noktalı virgül</b> konuluyor. Ama eklenen <b class="green">kütüphanelerin</b> sonuna 
+                ve <b class="blue">metotların</b> sonunda bulunan <b class="blue">süslü parantezlerin</b> sonuna konmuyor. <b class="red">Noktalı virgülün</b> kullanımı da bu şekildedir.
+            </p>
+            
+            <hr>
+            <a href="c++-giris.html">
+                <div class="back">Önceki</div>
+            </a>
+            <a href="yorum.html">
+                <div class="next">Sonraki</div>
+            </a>
+        </div>
+    </div>
+    <footer>2021-2022 &copy Bu Site Ali CEVİZ Tarafından Geliştirilmektedir.</footer>
+</body>
+</html>

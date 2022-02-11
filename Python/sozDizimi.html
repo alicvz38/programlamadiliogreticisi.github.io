@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Söz dizimi</title>
+    <link rel="stylesheet" href="python.css">
+</head>
+<body>
+    <a class="anaBaslik" href="../index.html">
+        <img src="../images/baslik.png" alt="Programlama Dili Öğreticisi">
+    </a>
+    <div class="ust"><ul class="diller">
+        <li><a href="../index.html">Ana Sayfa</a></li>
+        <li><a href="../C/c.html">C</a></li>
+        <li><a href="../C++/c++.html">C++</a></li>
+        <li><a href="../Java/java.html">Java</a></li>
+        <li><a href="../Python/python.html" class = "this disabled">Python</a></li>
+    </ul></div>
+    <div class="icerik">
+        <div class="left">
+            <ul class="konular">
+                <li><a href="python.html">Python Dili Nedir?</a></li>
+                <li><a href="python-giris.html">Python Giriş</a></li>
+                <li><a href="sozDizimi.html" class="this disabled">Söz Dizimi</a></li>
+                <li><a href="yorum.html">Yorum Satırı</a></li>
+                <li><a href="">Değişkenler</a></li>
+                <li><a href="">Veri Tipleri</a></li>
+                <li><a href="">Tip Dönüşümleri</a></li>
+                <li><a href="">Operatörler</a></li>
+                <li><a href="">Stringler</a></li>
+                <li><a href="">Math Kütüphanesi</a></li>
+                <li><a href="">Durum</a></li>
+                <li><a href="">if else</a></li>
+                <li><a href="">Switch case</a></li>
+                <li><a href="">While Döngüsü</a></li>
+                <li><a href="">For Döngüsü</a></li>
+                <li><a href="">Break Continue</a></li>
+                <li><a href="">Diziler</a></li>
+            </ul>
+        </div>
+        <hr>
+        <div class="right">
+            <h1>Python Dilinde Söz Dizimi Nedir?</h1>
+            <p>
+                Söz dizimi Python yazarken uymanız gereken yazım kurallarıdır. Söz Dizimi dilden dile değişiklik 
+                gösterebilir. En farklı söz dizimine sahip dil <b class="blue">Python dilidir</b>.
+            </p>
+            <h1>Süslü Parantez Yerine Boşluk Bırakmak</h1>
+            <p>
+                Birçok programlama dilinde <b class="blue">süslü parantezler</b> kullanarak kod blokları yazarız. Ancak pythonda bu durum biraz farklı. 
+                Bu işlemi bu kez satır başında boşluk bırakarak yapıyoruz.
+            </p>
+            <div class="kodAlani">
+                <div class="red">if</div> <div class="blue">5 </div> &lt <div class="blue">2</div>: <br>
+                <div class="bos"></div><div class="magenta">print</div>(<div class="blue">Beş, ikiden büyüktür.</div>)
+            </div>
+            <p>
+                Yukarıdaki kodu şu şekilde yazsaydık derleyici hata verirdi.
+            </p>
+            <div class="kodAlani">
+                <div class="red">if</div> <div class="blue">5 </div> &lt <div class="blue">2</div>: <br>
+                <div class="magenta">print</div>(<div class="blue">Beş, ikiden büyüktür.</div>)
+            </div>
+            <p>
+                Kaç tane boşluk olacağı tamamen programcıya kalmış.
+            </p>
+            <div class="kodAlani">
+                <div class="red">if</div> <div class="blue">5 </div> &lt <div class="blue">2</div>: <br>
+                <div class="bos"></div><div class="magenta">print</div>(<div class="blue">Beş, ikiden büyüktür.</div>) <br>
+                <div class="red">if</div> <div class="blue">5 </div> &lt <div class="blue">2</div>: <br>
+                <div class="bos"></div><div class="bos"></div><div class="magenta">print</div>(<div class="blue">Beş, ikiden büyüktür.</div>)
+            </div>
+            <p>
+                Ancak, her kod bloğunda aynı sayıda boşluk olmalıdır. Farklı sayıda boşluklar varsa hata verir.
+            </p>
+            <div class="kodAlani">
+                <div class="red">if</div> <div class="blue">5 </div> &lt <div class="blue">2</div>: <br>
+                <div class="bos"></div><div class="magenta">print</div>(<div class="blue">Beş, ikiden büyüktür.</div>) <br>
+                <div class="bos"></div><div class="bos"></div><div class="magenta">print</div>(<div class="blue">Beş, ikiden büyüktür.</div>) <br>
+            </div>
+            <p>
+                Yukarıda gördüğünüz kod hatalıdır. Boşluklar eşit olsaydı düzgün çalışırdı.
+            </p>
+            <a href="python-giris.html">
+                <div class="back">Önceki</div>
+            </a>
+            <a href="yorum.html">
+                <div class="next">Sonraki</div>
+            </a>
+        </div>
+    </div>
+    <footer>2021-2022 &copy Bu Site Ali CEVİZ Tarafından Geliştirilmektedir.</footer>
+</body>
+</html>

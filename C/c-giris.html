@@ -15,7 +15,7 @@
     </a>
     <div class="ust"><ul class="diller">
         <li><a href="../index.html">Ana Sayfa</a></li>
-        <li><a href="../C/c.html" class = "this">C</a></li>
+        <li><a href="../C/c.html" class = "this disabled">C</a></li>
         <li><a href="../C++/c++.html">C++</a></li>
         <li><a href="../Java/java.html">Java</a></li>
         <li><a href="../Python/python.html">Python</a></li>
@@ -23,10 +23,10 @@
     <div class="icerik">
         <div class="left">
             <ul class="konular">
-                <li><a href="../C/c.html">C Dili Nedir?</a></li>
-                <li><a href="../C/c-giris.html" class="this">C Giriş</a></li>
-                <li><a href="">Söz Dizimi</a></li>
-                <li><a href="">Yorum</a></li>
+                <li><a href="c.html">C Dili Nedir?</a></li>
+                <li><a href="c-giris.html" class="this disabled">C Giriş</a></li>
+                <li><a href="sozDizimi.html">Söz Dizimi</a></li>
+                <li><a href="yorum.html">Yorum Satırı</a></li>
                 <li><a href="">Değişkenler</a></li>
                 <li><a href="">Veri Tipleri</a></li>
                 <li><a href="">Tip Dönüşümleri</a></li>
@@ -43,18 +43,95 @@
             </ul>
         </div>
         <div class="right">
-
+            <h1>Ekrana Merhaba Dunya Yazdıran C Kodu</h1>
+            <hr>
+            <div class="kodAlani">
+                <div class="green">
+                    #include &ltstdio.h&gt <br>
+                    #include &ltconio.h&gt
+                </div><br><br>
+                <div class="main">
+                    int <div class="blue"><b>main()</b></div> <div class="blue">{</div><br>
+                        <div class="bos"></div><div class="bos"></div><div class="magenta">printf</div>(<div class="blue">"Merhaba Dunya"</div>)<div class="red">;</div><br><br>
+                        <div class="bos"></div><div class="bos"></div><div class="blue">getch()</div><div class="red">;</div><br>
+                        <div class="bos"></div><div class="bos"></div>return <div class="red">0</div><div class="red">;</div><br>
+                    <div class="blue">}</div>
+                </div>
+            </div>
+            <div class="kodCiktisi">
+                <h2 style = "color:rgba(0,0,0,0.5);">Ekran Çıktısı</h2><hr>
+                <div class="cikti">
+                    Merhaba Dunya
+                </div>
+            </div>
+            <div class="kodAciklamasi">
+                <h2 style = "color:rgba(0,0,0,0.5);">Kodların Açıklaması</h2><hr>
+                <div class="aciklama">
+                    <div class="green">
+                        #include &ltstdio.h&gt
+                        <br>
+                    </div>
+                    <div class = "aciklamalar">Bu kütüphane C dilini kodlarken bizim giriş ve çıkışları kullanmamız için gereken bir kütüphanedir.
+                        Bu kütüphane ile <b class="magenta">scanf()</b> girişi ile <b class="magenta">printf()</b> çıkışını kullanabiliriz.<br>
+                    </div>
+                    <hr class="cizgi">
+                    <div class="green">
+                        #include &ltconio.h&gt
+                        <br>
+                    </div>
+                    <div class="aciklamalar">Bu kütüphane de projemizi çalıştırdığımız zaman projenin kapanmasını önlemek.
+                        Bunu önlemek için bir de <b class="blue">getch()</b>; metodunu eklememiz yeterlidir.
+                    </div><br>
+                    <hr class="cizgi">
+                    int <div class="blue"><b>main()</b></div>
+                    <div class="aciklamalar">
+                        Bu metot projelerimizin çalışması için gereken ana metottur. Bu olmadan projeler çalışmaz.
+                    </div><br>
+                    <hr class="cizgi">
+                    <div class="magenta">printf</div>(<div class="blue">"Merhaba Dunya"</div>)<div class="red">;</div><br>
+                    <div class="aciklamalar">
+                        Burası da ekrana Merhaba Dunya yazdıran kodun olduğu yer. Burada çift tırnak içine hangi yazıyı yazarsanız ekrana o çıkar.
+                        Aşağıda bir örnek daha gösterilmiştir. Ona bakarak anlayabilirsiniz.
+                    </div><br>
+                    <hr class="cizgi">
+                    return <div class="red">0</div><div class="red">;</div><br>
+                    <div class="aciklamalar">
+                        Son olarak da return <div class="red">0</div><div class="red">;</div> ile kodu bitirmiş oluyoruz. Burası ana metot olduğu için return kullanmasanız da program çalışır.
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="kodAlani">
+                <div class="green">
+                    #include &ltstdio.h&gt <br>
+                    #include &ltconio.h&gt
+                </div><br><br>
+                <div class="main">
+                    int <div class="blue"><b>main()</b></div>{<br>
+                        <div class="bos"></div><div class="bos"></div><div class="magenta">printf</div>(<div class="blue">"Merhaba C Dili"</div>)<div class="red">;</div><br><br>
+                        <div class="bos"></div><div class="bos"></div><div class="blue">getch()</div><div class="red">;</div><br>
+                        <div class="bos"></div><div class="bos"></div>return <div class="red">0</div><div class="red">;</div><br>
+                    }<br>
+                </div>
+            </div>
+            <div class="kodCiktisi">
+                <h2 style = "color:rgba(0,0,0,0.5);">Ekran Çıktısı</h2><hr>
+                <div class="cikti">
+                    Merhaba C Dili
+                </div>
+            </div>
+            <hr>
             <a href="c.html">
                 <div class="back">Önceki</div>
             </a>
-            <a href="">
+            <a href="sozDizimi.html">
                 <div class="next">Sonraki</div>
             </a>
 
         </div>
     </div>
 
-    <footer>2021-2021 &copy Bu Site Ali CEVİZ Tarafından Geliştirilmektedir.</footer>
+    <footer>2021-2022 &copy Bu Site Ali CEVİZ Tarafından Geliştirilmektedir.</footer>
 </body>
 
 </html>
