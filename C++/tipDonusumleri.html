@@ -41,8 +41,109 @@
             </ul>
         </div>
         <div class="right">
-            <p>İçerikler Eklenecektir</p>
+            <h1>Tip Dönüşümleri</h1>
             <hr>
+            <p>
+                Bir veri tipinin başka bir veri tipine çevrilmesidir. Bazı tip dönüşümleri veri kaybına 
+                sebep olurken bazılarını da yapmak mümkün değildir. C++ üstü kapalı (implicit) birçok dönüşümü 
+                otomatik olarak yapabilir. Örneğin, aşağıda int bir veri long bir veriye dönüştürülmüş.
+            </p>
+
+            <div class="kodAlani">
+                <div class="red">int</div> myInt(12)<div class="red">;</div><br>
+                <div class="red">long</div> myLong<div class="red">;</div><br>
+                myLong <div class="red">=</div> myInt<div class="red">;</div>
+            </div>
+            <p>
+                Bu durumda veri, daha büyük bir veri tipine dönüştürüldüğü için veri kaybı olmadı. 
+                Ama aşağıdaki durumlarda böyle bir durum söz konusu.
+            </p>
+
+            <table border = 1 cellpadding = 10 cellspacing = 0 class = "donusum">
+                <thead>
+                    <tr>
+                        <th>Dönüşüm</th>
+                        <th>Olası Riskler</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            Double'den Float'a
+                        </td>
+                        <td>	
+                            Hassaslık kaybı ya da sınırların dışına taşma
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Double ya da Float'tan int ya da diğer tam sayılara
+                        </td>
+                        <td>
+                            Kesirli kısmın kaybı ya da sınırların dışına taşma
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Long'dan Int'e
+                        </td>
+                        <td>	
+                            Sınırların dışına taşma
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <h1>
+                Açık tip dönüşümleri
+            </h1>
+            <p>
+                C++ da beş farklı tip dönüşümü vardır. 
+                <div class="list">
+                    <ul>
+                        <li>C-Style</li>
+                        <li>static</li>
+                        <li>Dynamic</li>
+                        <li>const</li>
+                        <li>reinterperet</li>
+                    </ul>
+                </div>
+                
+            </p>
+            <p>
+            Ama bu dersimizde sadece C-Style dönüşüm ve static dönüşümler anlatılacaktır.
+            </p><br>
+            <h2 style = "color: red; font-size: 2.4rem;text-align: left; padding-left: 5rem;">C-Style Dönüşüm</h2>
+            <p>
+                Bu dönüşümde parantez operatörü kullanılır. Parantezin içine yazılan tip dönüştürülecek tip olur.
+            </p>
+            <div class="kodAlani">
+                <div class="red">int</div> i1 <div class="red">=</div> 10<div class="red">;</div><br>
+                <div class="red">int</div> i2 <div class="red">=</div> 4<div class="red">;</div><br>
+                <div class="red">float</div> f <div class="red">=</div> (<div class="red">float</div>)i1 / i2<div class="red">;</div>
+            </div>
+            <p>
+                Aynı zamanda bu şekilde de yapılabilir. 
+            </p>
+            <div class="kodAlani">
+                <div class="red">int</div> i1 <div class="red">=</div> 10<div class="red">;</div><br>
+                <div class="red">int</div> i2 <div class="red">=</div> 4<div class="red">;</div><br>
+                <div class="red">float</div> f <div class="red">=</div> <div class="red">float</div>(i1) / i2<div class="red">;</div>
+            </div>
+            <h2 style = "color: red; font-size: 2.4rem;text-align: left; padding-left: 5rem;">Static Dönüşüm</h2>
+            <p>
+                Statik dönüşümün en iyi yanı, derleme zamanı kontrol yapmasıdır. Böylece mantıksız olabilecek işlemlerden kaçınılır.
+            </p>
+            <div class="kodAlani">
+                <div class="red">char</div> c <div class="red">=</div> <div class="blue">'a'</div><div class="red">;</div><br>
+                <b class="magenta"> cout</b> <div class="red">&lt&lt </div> <div class="blue">static_cast</div>&lt<div class="red">int</div>&gt(c) <div class="red">&lt&lt</div> <b class="magenta">endl</b><div class="red">;</div>
+                <div class="green">// a değil char'da a'nın değeri olan 97 yazdırır.</div>
+            </div>
+            <div class="kodCiktisi">
+                <h2 style = "color:rgba(0,0,0,0.5);">Ekran Çıktısı</h2><hr>
+                <div class="cikti">
+                    97
+                </div>
+            </div>
             <a href="veriTipi.html">
                 <div class="back">Önceki</div>
             </a>

@@ -43,6 +43,7 @@
         <hr>
         <div class="right">
             <h1>C++ Dilinde Söz Dizimi Nedir?</h1>
+            <hr>
             <p>
                 Söz dizimi C++ yazarken uymanız gereken yazım kurallarıdır. Söz Dizimi dilden dile değişiklik 
                 göstersede çoğu kökünde birbirine benzer. bu sayede bir dili öğrendikten sonra 2. bir dil 
@@ -55,9 +56,9 @@
                 Örneğin içeride yaptığınız bir toplama işlemi dışarıdaki sonucu değiştirmez. Yani o <b class="blue">metodu</b> çağırmadığımız sürece hiç bir işlevi yoktur.
             </p>
             <div class="kodAlani">
-                <div class="blue">{</div> <br>
+                { <br>
                     <div class="bos"></div> <div class="green">// Blok Alanı</div> <br>
-                <div class="blue">}</div>
+                }
             </div>
             <h1>Noktalı Virgül(;)</h1>
             <p>
@@ -68,14 +69,14 @@
                 <div class="green">
                     #include &ltiostrem&gt
                 </div><br>
-                using namespace <div class="red">std</div><div class="red">;</div>
+                using namespace <b class="red">std</b><div class="red">;</div>
                 <br><br>
-                int <div class="blue"><b>main()</b></div><div class="blue">{</div><br>
-                    <div class="bos"></div><div class="bos"></div><div class="magenta">cout</div> &lt&lt <div class="blue">"Merhaba Dunya"</div><div class="red"></div> &lt&lt <div class="magenta"> endl</div>;<br><br>
-                    <div class="bos"></div><div class="red">int</div> <div class="blue">deger</div> = <div class="blue">5</div><div class="red">;</div><br>
-                    <div class="bos"></div><div class="red">int</div> <div class="blue">sayi</div> = <div class="blue">deger</div> * <div class="blue">5</div><div class="red">;</div><br>
-                    <div class="bos"></div><div class="magenta">cout</div> &lt&lt <div class="blue">"Belirlenen Değer : "</div><div class="red"></div> &lt&lt deger &lt&lt <div class="blue">" Sayı : "</div> &lt&lt sayi &lt&lt <div class="magenta"> endl</div>;<br><br>
-                <div class="blue">}</div>
+                <div class="red">int</div> <b class="magenta">main</b>(){<br>
+                    <div class="bos"></div><b class="magenta">cout</b> <div class="red">&lt&lt</div> <div class="blue">"Merhaba Dunya"</div> <div class="red">&lt&lt</div> <b class="magenta"> endl</b><div class="red">;</div><br>
+                    <div class="bos"></div><div class="red">int</div> deger = 5<div class="red">;</div><br>
+                    <div class="bos"></div><div class="red">int</div> sayi = deger * 5<div class="red">;</div><br>
+                    <div class="bos"></div><b class="magenta">cout</b> <div class="red">&lt&lt</div> <div class="blue">"Belirlenen Değer : "</div><div class="red"></div> <div class="red">&lt&lt</div> deger <div class="red">&lt&lt</div> <div class="blue">" Sayı : "</div> <div class="red">&lt&lt</div> sayi <div class="red">&lt&lt</div> <b class="magenta"> endl</b><div class="red">;</div><br><br>
+                }
             </div>
             <p>
                 Yukarıda gördüğünüz gibi değer atamalarında, işlemlerde ve ekran çıktılarının sonunda <b class="red"> noktalı virgül</b> konuluyor. Ama eklenen <b class="green">kütüphanelerin</b> sonuna 

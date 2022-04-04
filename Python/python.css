@@ -23,7 +23,10 @@ a{
     color:magenta;
     display: inline-block;
 }
-
+.black{
+    display:inline-block;
+    color: black;
+}
 .consolas{
     font-family: Consolas;
 }
@@ -67,6 +70,10 @@ img{
 .diller li .this{
     color:white;
     background: black;
+}
+.right .operatorler li{
+    font-family: Consolas;
+    color: blue;
 }
 .icerik{
     display: flex;
@@ -199,10 +206,53 @@ p::before{
     height: 1rem;
     float:left;
 }
-.kodAciklamasi .cizgi{
+.cizgi{
     width: 50%;
     margin: 2rem auto;
     border: 1px solid rgba(0,250,0, 0.25);
+}
+
+.cikti{
+    line-height: 3rem;;
+}
+.mark{
+    padding: 0.3rem;
+    background: #cde;
+    border-radius: 0.5rem;
+    box-shadow: 0.1rem 0.1rem 0.3rem 0.1rem rgba(0,0,0,0.25);
+}
+table{
+    font-size: 1.8rem;
+    width: 25%;
+    margin: 2rem auto;
+}
+table thead tr th{
+    background: #cff;
+    padding: 1rem;
+    font-family: arial;
+    color: red;
+}
+table tbody tr{
+    transition: 300ms;
+}
+table tbody tr td{
+    padding: 1rem;
+    font-family: arial;
+}
+table tbody tr:hover:nth-child(even){
+    background: #ddd;
+}
+table tbody tr:hover:nth-child(odd){
+    background: #888;
+}
+table tbody tr:nth-child(even){
+    background: #fff;
+}
+table tbody tr:nth-child(odd){
+    background: #bbb;
+}
+.op{
+    width: 80%;
 }
 .bos{
     display: inline-block;

@@ -43,6 +43,7 @@
         <hr>
         <div class="right">
             <h1>Python Dilinde Söz Dizimi Nedir?</h1>
+            <hr>
             <p>
                 Söz dizimi Python yazarken uymanız gereken yazım kurallarıdır. Söz Dizimi dilden dile değişiklik 
                 gösterebilir. En farklı söz dizimine sahip dil <b class="blue">Python dilidir</b>.
@@ -53,32 +54,32 @@
                 Bu işlemi bu kez satır başında boşluk bırakarak yapıyoruz.
             </p>
             <div class="kodAlani">
-                <div class="red">if</div> <div class="blue">5 </div> &lt <div class="blue">2</div>: <br>
-                <div class="bos"></div><div class="magenta">print</div>(<div class="blue">Beş, ikiden büyüktür.</div>)
+                <div class="red">if</div> 5 <div class="red">&lt</div> 2: <br>
+                <div class="bos"></div><div class="magenta">print</div>(<div class="blue">"Beş, ikiden büyüktür."</div>)
             </div>
             <p>
                 Yukarıdaki kodu şu şekilde yazsaydık derleyici hata verirdi.
             </p>
             <div class="kodAlani">
-                <div class="red">if</div> <div class="blue">5 </div> &lt <div class="blue">2</div>: <br>
-                <div class="magenta">print</div>(<div class="blue">Beş, ikiden büyüktür.</div>)
+                <div class="red">if</div> 5 <div class="red">&lt</div> 2: <br>
+                <div class="magenta">print</div>(<div class="blue">"Beş, ikiden büyüktür."</div>)
             </div>
             <p>
                 Kaç tane boşluk olacağı tamamen programcıya kalmış.
             </p>
             <div class="kodAlani">
-                <div class="red">if</div> <div class="blue">5 </div> &lt <div class="blue">2</div>: <br>
-                <div class="bos"></div><div class="magenta">print</div>(<div class="blue">Beş, ikiden büyüktür.</div>) <br>
-                <div class="red">if</div> <div class="blue">5 </div> &lt <div class="blue">2</div>: <br>
-                <div class="bos"></div><div class="bos"></div><div class="magenta">print</div>(<div class="blue">Beş, ikiden büyüktür.</div>)
+                <div class="red">if</div> 5 <div class="red">&lt</div> 2: <br>
+                <div class="bos"></div><div class="magenta">print</div>(<div class="blue">"Beş, ikiden büyüktür."</div>) <br>
+                <div class="red">if</div> 5 <div class="red">&lt</div> 2: <br>
+                <div class="bos"></div><div class="bos"></div><div class="magenta">print</div>(<div class="blue">"Beş, ikiden büyüktür."</div>)
             </div>
             <p>
                 Ancak, her kod bloğunda aynı sayıda boşluk olmalıdır. Farklı sayıda boşluklar varsa hata verir.
             </p>
             <div class="kodAlani">
-                <div class="red">if</div> <div class="blue">5 </div> &lt <div class="blue">2</div>: <br>
-                <div class="bos"></div><div class="magenta">print</div>(<div class="blue">Beş, ikiden büyüktür.</div>) <br>
-                <div class="bos"></div><div class="bos"></div><div class="magenta">print</div>(<div class="blue">Beş, ikiden büyüktür.</div>) <br>
+                <div class="red">if</div> 5 <div class="red">&lt</div> 2: <br>
+                <div class="bos"></div><div class="magenta">print</div>(<div class="blue">"Beş, ikiden büyüktür."</div>) <br>
+                <div class="bos"></div><div class="bos"></div><div class="magenta">print</div>(<div class="blue">"Beş, ikiden büyüktür."</div>) <br>
             </div>
             <p>
                 Yukarıda gördüğünüz kod hatalıdır. Boşluklar eşit olsaydı düzgün çalışırdı.

@@ -41,7 +41,212 @@
             </ul>
         </div>
         <div class="right">
-            <p>İçerikler Eklenecektir</p>
+            <h1>Operatörler</h1>
+            <hr>
+            <p>
+                <b class="blue">Operatörler</b>, değişkenler ve değerler üzerinde işlem yapmak için kullanılır. C++ dilinde operatörler aşağıdaki gruplara ayrılır.
+            </p><br>
+            <ul class="operatorler">
+                <li>Aritmetik Operatörler</li>
+                <li>Atama Operatörleri</li>
+                <li>Karşılaştırma Operatörleri</li>
+                <li>Mantıksal Operatörler</li>
+            </ul>
+            <br>
+            <h1>Aritmetik Operatörler</h1>
+            <p>
+                Aritmetik operatörler, yaygın matematiksel işlemleri gerçekleştirmek için kullanılır.
+            </p>
+            <table border = 1 cellspacing = 0>
+                <thead>
+                    <tr>
+                        <th>Operatör</th>
+                        <th>İsim</th>
+                        <th>Kullanımı</th>
+                        <th>Örnek</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>+</td>
+                        <td>Ekleme</td>
+                        <td>Verilen iki değeri toplar.</td>
+                        <td>x + y</td>
+                    </tr>
+                    <tr>
+                        <td>-</td>
+                        <td>Çıkarma</td>
+                        <td>Verilen bir değerden Verilen diğer değeri çıkarır.</td>
+                        <td>x - y</td>
+                    </tr>
+                    <tr>
+                        <td>*</td>
+                        <td>Çarpma</td>
+                        <td>Verilen iki değeri çarpar.</td>
+                        <td>x * y</td>
+                    </tr>
+                    <tr>
+                        <td>/</td>
+                        <td>Bölme</td>
+                        <td>Verilen bir değeri Verilen diğer değere böler.</td>
+                        <td>x / y</td>
+                    </tr>
+                    <tr>
+                        <td>%</td>
+                        <td>Modül</td>
+                        <td>Verilen bir değerin Verilen diğer bir değerin bölümünden kalanını alır.</td>
+                        <td>x % y</td>
+                    </tr>
+                    <tr>
+                        <td>++</td>
+                        <td>Artış</td>
+                        <td>Verilen değeri bir artırır.</td>
+                        <td>x++</td>
+                    </tr>
+                    <tr>
+                        <td>--</td>
+                        <td>Azalış</td>
+                        <td>Verilen bir değeri bir azaltır.</td>
+                        <td>x--</td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+            <hr class="cizgi">
+            <br>
+            <h1>Atama Operatörleri</h1>
+            <p>
+                Değişkenlere değer atamak için atama operatörleri kullanılır.
+            </p>
+            <table border = 1 cellspacing = 0>
+                <thead>
+                    <tr>
+                        <th>Operatör</th>
+                        <th>Kullanımı</th>
+                        <th>Başka Bir Kullanımı</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>=</td>
+                        <td>x = 5</td>
+                        <td>x = 5</td>
+                    </tr>
+                    <tr>
+                        <td>+=</td>
+                        <td>x += 3</td>
+                        <td>x =x + 3</td>
+                    </tr>
+                    <tr>
+                        <td>-=</td>
+                        <td>x -= 3</td>
+                        <td>x = x - 3</td>
+                    </tr>
+                    <tr>
+                        <td>*=</td>
+                        <td>x *= 3</td>
+                        <td>x = x * 3</td>
+                    </tr>
+                    <tr>
+                        <td>/=</td>
+                        <td>x /= 3</td>
+                        <td>x = x / 3</td>
+                    </tr>
+                    <tr>
+                        <td>%=</td>
+                        <td>x %= 3</td>
+                        <td>x = x % 3</td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+            <hr class="cizgi">
+            <br>
+            <h1>Karşılaştırma Operatörleri</h1>
+            <p>
+                Karşılaştırma operatörleri iki değeri karşılaştırmak için kullanılır.
+            </p>
+            <p>
+                <b class="mark red">Not:</b> Bir karşılaştırmanın dönüş değeri doğru (<span class="red">1</span>) veya yanlıştır (<span class="red">0</span>).
+            </p>
+            <table border = 1 cellspacing = 0>
+                <thead>
+                    <tr>
+                        <th>Operatör</th>
+                        <th>İsim</th>
+                        <th>Örnek</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>==</td>
+                        <td>Eşit</td>
+                        <td>x == y</td>
+                    </tr>
+                    <tr>
+                        <td>!=</td>
+                        <td>Eşit Değil</td>
+                        <td>x != y</td>
+                    </tr>
+                    <tr>
+                        <td>&gt</td>
+                        <td>Büyük</td>
+                        <td>x &gt y</td>
+                    </tr>
+                    <tr>
+                        <td>&lt</td>
+                        <td>Küçük</td>
+                        <td>x &lt y</td>
+                    </tr>
+                    <tr>
+                        <td>&gt=</td>
+                        <td>Büyük Eşit</td>
+                        <td>x &gt= y</td>
+                    </tr>
+                    <tr>
+                        <td>&lt=</td>
+                        <td>Küçük Eşit</td>
+                        <td>x &lt= y</td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+            <hr class="cizgi">
+            <br>
+            <h1>Mantıksal Operatörler</h1>
+            <p>
+                Mantıksal operatörler, değişkenler veya değerler arasındaki mantığı belirlemek için kullanılır.
+            </p>
+            <table border = 1 cellspacing = 0>
+                <thead>
+                    <tr>
+                        <th>Operatör</th>
+                        <th>İsim</th>
+                        <th>Kullanımı</th>
+                        <th>Örnek</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>&&</td>
+                        <td>Lojik and</td>
+                        <td>İkisi de dorğu ise sonuç doğrudur.</td>
+                        <td>x &lt 5 &&  x &lt 10</td>
+                    </tr>
+                    <tr>
+                        <td>||</td>
+                        <td>Lojik or</td>
+                        <td>En az biri dorğu ise sonuç doğrudur.</td>
+                        <td>x &lt 5 || x &lt 4</td>
+                    </tr>
+                    <tr>
+                        <td>!</td>
+                        <td>Lojik not</td>
+                        <td>Yanlış ise sonuç doğrudur.</td>
+                        <td>!(x &lt 5 &&  x &lt 10)</td>
+                    </tr>
+                </tbody>
+            </table>
             <hr>
             <a href="tipDonusumleri.html">
                 <div class="back">Önceki</div>

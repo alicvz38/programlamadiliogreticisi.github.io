@@ -41,8 +41,102 @@
             </ul>
         </div>
         <div class="right">
-            <p>İçerikler Eklenecektir</p>
+            <h1>Değişkenler</h1>
             <hr>
+            <h1>Değişken Tanımlama ve Değer Atama</h1>
+            <hr>
+            <p>
+                <b class="blue">Python</b> değişkenleri, bellek alanını ayırmak için açık bildirime gerek duymaz. Başka bir deyişle <b class="blue">C, C++</b> ve <b class="blue">Java</b>
+                dillerinde olduğu gibi değişkenin tipini önceden tanımlamaya gerek yoktur. Bu açıdan Javascript ve PHP dillerindeki
+                tanımlamaya benzerdir. Bu konu öğrenciler tarafından değişken tipi yokmuş gibi algılanmaktadır. Bu kesinlikle yanlıştır.
+                Değer tipi belirleme programlama dili yorumlaması sırasında atanan ilk değere göre belirlenir. Başka bir deyişle tip belirleme
+                atama işlemi olduğunda otomatik olarak belirlenir. Değer atamak için çoğu programlama dilindeki gibi <b class="blue">eşittir</b> işareti kullanılır.
+            </p>
+            <div class="kodAlani">
+                <div class="green"># Tam sayı değişkenleri</div><br>
+                sayi <div class="red">=</div> 100<br>
+                <hr class="cizgi">
+                <div class="green"># Virgüllü sayı değişkenleri</div><br>
+                km <div class="red">=</div> 72.5<br>
+                <hr class="cizgi">
+                <div class="green"># Metin değişkenleri</div><br>
+                isim <div class="red">=</div> <div class="blue">"Ali"</div> <br>
+            </div><br>
+            <p>
+                Bir değişken tanımlayıp bir değer atadığımızda arka planda işletim sistemi tarafından belirlenen bellek adresleri uygulamamıza tahsis edilir.
+                Bellek büyüklüğü tanımlanan veri türünün boyutu ile alakalıdır.
+            </p>
+            <p>
+                Örneğin, sayaç değişkeni 2000 adresten başlayıp 32 bitlik yer kaplar. Başka bir deyişle 4 byte’lık yer kaplamıştır. Bu 32 bitlik yer içinde 100 sayısı tutulmaktadır. 
+                Biz sayı değişkenini çağırdığımızda 2000 adrese gidilip 32 bitlik okuma yapılır ve karşımıza bellekteki sayı çıkar. Python’da 
+                bir değişkenin hangi veri tipinde saklandığı bulmak <b class="blue">değişken tipi</b> metodu kullanılır.
+            </p>
+            <br>
+            <h1>Çoklu atama</h1>
+            <p>
+                Python, aynı anda birden fazla değişkene tek bir değer atamanıza izin verir. Örnek olarak
+            </p>
+            <div class="kodAlani">
+                a <div class="red">=</div> b <div class="red">=</div> c <div class="red">=</div> 5
+            </div>
+            <p>
+                Burada, 1 değeriyle bir tamsayı nesnesi oluşturulur ve üç değişkenin tümü aynı bellek konumuna atanır.
+            </p>
+            <br>
+            <p>
+                Birden çok değişkene birden çok nesne atayabiliriz. Örnek olarak
+            </p>
+            <div class="kodAlani">
+               d <div class="red">,</div> e <div class="red">,</div> f <div class="red">=</div> 25 <div class="red">,</div> 3.14 <div class="red">,</div> <div class="blue">"Ali"</div>
+            </div>
+            <p>
+                Burada, 25 ve 3.14 değerlerine sahip iki tamsayı nesnesi, sırasıyla <b class="red">d</b> ve <b class="red">e</b> değişkenlerine atanır ve "Ali" değerine sahip bir dize nesnesi,
+                değişken <b class="red">f</b>’ye atanır. Örnek olarak
+            </p>
+            <div class="kodAlani">
+                <div class="magenta">print</div><div class="black">(<div class="black">a</div>)</div><br>
+                <div class="magenta">print</div><div class="black">(<div class="black">b</div>)</div><br>
+                <div class="magenta">print</div><div class="black">(<div class="black">c</div>)</div><br>
+                <div class="magenta">print</div><div class="black">(<div class="black">d</div>)</div><br>
+                <div class="magenta">print</div><div class="black">(<div class="black">e</div>)</div><br>
+                <div class="magenta">print</div><div class="black">(<div class="black">f</div>)</div><br>
+            </div>
+            <div class="kodCiktisi">
+                <h2 style = "color:rgba(0,0,0,0.5);">Ekran Çıktısı</h2><hr>
+                <div class="cikti">
+                    1<br>1<br>1<br>25<br>3.14<br>Ali
+                </div>
+            </div>
+            <p>
+                Şimdi bu değişkenlerin bellek adreslerine bakalım. Bunun için <b class="magenta">id</b><b class="blue">(<b class="black">değişken adı</b>)</b> fonksiyonu kullanacağız.
+            </p>
+            <div class="kodAlani">
+                <div class="magenta">print<div class="black">(<div class="magenta">id<div class="black">(<div class="black">a</div>)</div></div>)</div></div><br>
+                <div class="magenta">print<div class="black">(<div class="magenta">id<div class="black">(<div class="black">b</div>)</div></div>)</div></div><br>
+                <div class="magenta">print<div class="black">(<div class="magenta">id<div class="black">(<div class="black">c</div>)</div></div>)</div></div><br>
+                <div class="magenta">print<div class="black">(<div class="magenta">id<div class="black">(<div class="black">d</div>)</div></div>)</div></div><br>
+                <div class="magenta">print<div class="black">(<div class="magenta">id<div class="black">(<div class="black">e</div>)</div></div>)</div></div><br>
+                <div class="magenta">print<div class="black">(<div class="magenta">id<div class="black">(<div class="black">f</div>)</div></div>)</div></div><br>
+            </div>
+            <div class="kodCiktisi">
+                
+                <h2 style = "color:rgba(0,0,0,0.5);">Ekran Çıktısı</h2><hr>
+                <div class="cikti">
+                    1907410672 <br>
+                    1907410672 <br>
+                    1907410672 <br>
+                    1907410960 <br>
+                    1907411280 <br>
+                    2890668904736
+                </div>
+                
+            </div>
+            <p>
+                Çıktı olarak a, b, c değişkenleri aynı bellek adresini kullandıklarını görülür. Burası değişken konusunun en önemli kısımlarından biridir. Nesneye yönelik 
+                dillerde değer tabanlı atama ve adres tabanlı atama olmak üzere iki konu vardır. Adres tabanlı bir atama yapılınca iki değişken biri değişse de diğer değişkende 
+                etkilenir. Aslında değişiklik yapılan adres aynıdır. Özellikle nesne yönelimli programlama bölümünde bu konu biraz daha ayrıntılı bir şekilde anlatılacaktır. 
+                Diğer taraftan değer tabanlı atamada değişkenler farklı bellek bölgelerini işaret ettiği için değişken üzerinde yapılan değişiklikler birbirinden etkilenmez.
+            </p>
             <a href="yorum.html">
                 <div class="back">Önceki</div>
             </a>

@@ -41,7 +41,186 @@
             </ul>
         </div>
         <div class="right">
-            <p>İçerikler Eklenecektir</p>
+            <h1>Tip Dönüşümleri</h1>
+            <hr>
+            <p>
+                Bir programlama dilini geliştirmekle uğraşan kişiler genellikle tanımsız bir davranışın olmamasına dikkat eder 
+                ve dili buna göre oluştururlar. Bizim bile oturup kolayca düşünebildiğimiz bu durumu elbette onlar da düşünmüş 
+                ve bir çözüm üretmişlerdir. C dilinde belli bir türdeki ifadeyi başka bir tipe dönütürmeye <b class="blue">Tip Dönüşümü</b> 
+                adı verilir. Eğer derleyici bu işlemi kapalı bir şekilde otomatik yapıyorsa buna <b class="blue">kapalı tip dönüşümü</b> adı verilirken, 
+                programcının bunu kendi eliyle yapması <b class="blue">açık tip dönüşümü</b> olarak adlandırılır.</p>
+
+                <p>
+                    Öncelikle kapalı tip dönüşümlerine ve derleyicinin derleme sırasında hangi durumlarda kapalı tip dönüşümü uyguladığına 
+                    bakalım. Kapalı tip dönüşümleri, siz hiç bir şey belirtmeden bir tipi farklı bir tipr atadığınızda gerçekleşir. 
+                    Eğer birbirlerine dönüşebilen iki tipi birbirine atadıysanız bir sorun çıkmayacaktır. Ama derleyicinin dönüştürmesi 
+                    mümkün olmayan iki tipi birbirine atadığınızda derleyici hata verecektir. Peki biz neye göre dönüşüp dönüşmeyeceğini 
+                    anlayacağız? Öncelikle C dilindeki temel veri tipleri arasındaki büyüklük hiyerarşisini gösteren şu figüre bakalım:
+                </p>
+
+                <div class="kb">
+                    <h2>Küçük</h2>
+                    <h2>Büyük</h2>
+                </div>
+                <table class = "tipler">
+                    <thead>
+                        <tr>
+                            <th>1</th>
+                            <th>2</th>
+                            <th>3</th>
+                            <th>4</th>
+                            <th>5</th>
+                            <th>6</th>
+                            <th>7</th>
+                            <th>8</th>
+                            <th>9</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>char =&gt</td>
+                            <td>short =&gt</td>
+                            <td>int =&gt</td>
+                            <td>unsigned int =&gt</td>
+                            <td>long =&gt</td>
+                            <td>unsigned long =&gt</td>
+                            <td>float =&gt</td>
+                            <td>double =&gt</td>
+                            <td>long double</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>
+                    Burada temsili olarak görülse de her makinede bu türler arasındaki büyüklük ilişkisi bu şekilde olmaz. 
+                    Büyüklük ilişkileri ile tip dönüşümleri arasında yakın bir ilişki vardır. Çünkü burada eğer büyük veri tipi 
+                    küçük veri tipine atanırsa bir veri kaybına neden olabilir. Örnek olarak:
+                </p>
+                <div class="kodAlani">
+                    <div class="red">unsigned long</div> <div class="black">sayi1</div> <div class="red">=</div> <div class="black">999999999999999995</div><div class="red">;</div><br>
+                    <div class="red">unsigned int</div> <div class="black">sayi2</div> <div class="red">=</div> <div class="black">sayi1</div>;
+                </div>
+                <p>
+                    Burada <span class="mark consolas red">unsigned long</span> tipinin bilgisayarda <span class="mark consolas blue">8 bayt</span> ,
+                     <span class="mark consolas red">unsigned int</span> tipinin ise <span class="mark consolas blue">4 bayt</span> yer kaplamaktadır.
+                </p><br>
+                <p>
+                    Buradaki <span class="mark consolas blue">sayi1</span> değişkenini ekrana yazdırdığımızda ona atadığımız değerin ekrana 
+                    basıldığını görürsünüz. Fakat <span class="mark consolas blue">sayi2</span> değişkenini ekrana yazdırdığımızda <span class="mark consolas blue">2.808.348.667</span> gibi 
+                    bir sayı görürsünüz. Bu da ne demek oluyor?
+                </p><br>
+                <p>
+                    Şimdi size arkaplanda ne döndüğünü açıklayayım. Öncelikle hesaplamalar için işletim sisteminizde bulunan hesap makinesini “Programlama” modunda kullanabilirsiniz. 
+                    <span class="mark consolas blue">999.999.999.999.999.995</span> sayısının <span class="consolas mark blue">64 bitlik</span> bir alanda değeri şudur:
+                </p><br>
+                <p style = "text-align: center;">
+                    0000 1101 1110 0000 1011 0110 1011 0011 1010 0111 0110 0011 1111 1111 1111 1011
+                </p><br>
+                <p>
+                    Yukarıda da gördüğünüz gibi en soldaki değer en yüksek anlamlı bit iken, en sağdaki değer en düşük anlamlı bittir. C dili daha 
+                    önce bahsettiğim <span class="mark">Little Endian</span> ile baytları belleğe yerleştirdiğine göre bunları önce 8 bitlik gruplar halinde ve her birinin kaçıncı bayta denk geldiğini belirterek yazalım:
+                </p><br>
+                <p style = "text-align: center;">
+                    <br>
+                    (1111 1011) → 1. Bayt <br>
+                    (1111 1111) → 2. Bayt <br>
+                    (0110 0011) → 3. Bayt <br>
+                    (1010 0111) → 4. Bayt <br>
+                    (1011 0011) → 5. Bayt <br>
+                    (1011 0110) → 6. Bayt <br>
+                    (1110 0000) →7. Bayt <br>
+                    (0000 1101) → 8. Bayt
+                </p><br>
+                <p>
+                    Siz bunun gibi bir şeyi 4 baytlık alana atamak istediğinizde, derleyici son 4 baytı silip ilk 4 baytı belleğe yerleştirecektir. Bakalım elimizde ne kalıyor:
+                </p><br>
+                <p style = "text-align: center;"><br>
+                    (1111 1011) → 1. Bayt <br>
+                    (1111 1111) → 2. Bayt <br>
+                    (0110 0011) → 3. Bayt <br>
+                    (1010 0111) → 4. Bayt
+                </p><br>
+                <p>
+                    Şimdi de bunları doğru bir sırayla yazalım ve onluk sistemde hangi sayıya denk geldiğini bulalım:
+                </p><br>
+                <p style = "text-align: center;">
+                    (1010 0111 0110 0011 1111 1111 1111 1011)<sub class = "red">2</sub> <span class="red">=</span> (2.808.348.667)<sub class = "red">10</sub>
+                </p><br>
+                <p>
+                    Taban aritmetiği ile veya hesap makinesi ile sonucun aynen bu şekilde çıktığını görebilirsiniz. İşte C dilinde tür 
+                    dönüştürme mekanizması bu şekilde çalışır. Daha büyük bir veri tipini daha küçük bir veri tipine eşitlediğinizde, 
+                    artık kısım silinir ve o şekilde eşitleme yapılır. Yukarıdaki <span class="mark consolas blue">sayi2 <span class="red">=</span> sayi1</span> ataması kapalı tür dönüşümüne örnekti. 
+                    Burada biz özellikle dönüştür diye bir şey söylemedik. Derleyici bunu gördüğünde otomatik olarak yukarıda yaptığımız 
+                    işlemleri yapmaktadır. Burada gördüğümüz kapalı tip dönüşümü atama operatörü ile yapılmıştır. Bir de artimetik 
+                    operatörler ile yapılan kapalı tür dönüşümleri vardır. Örneğin <span class="red">+</span> operatörünün sağ ile sol tarafındaki operandların 
+                    türleri birbirine eşit değilse, derleyici küçük olan tipi büyük olan tipe dönüştürecektir. Küçük bir örnek:
+                </p><br>
+                <div class="kodAlani">
+                    <div class="red">int</div> <div class="black">a</div> <div class="red">=</div> <div class="black">4</div><div class="red">;</div><br>
+                    <div class="red">long</div> <div class="black">b</div> <div class="red">=</div> <div class="black">999999999999999995</div><div class="red">;</div><br>
+                    <b class="magenta">printf</b>(<div class="blue">"Sonuc : %ld"</div><div class="red">,</div>(a <div class="red">+</div> b))<div class="red">;</div>
+                </div>
+                <div class="kodCiktisi">
+                    <h2 style="color:rgba(0,0,0,0.5);">Ekran Çıktısı</h2>
+                    <hr>
+                    <div class="cikti">
+                        Sonuc: 999999999999999999
+                    </div>
+                </div>
+                <p>
+                    Gördüğünüz gibi ifadenin sonucu yine <span class="mark consolas red">long</span> tipinde çıktı. Burada derleyici <b class="red">+</b> operatörünün sağ tarafındaki ifade ile sol tarafındaki 
+                    ifadenin aynı türde olmadığını görüp küçük olan tipi büyük olan tipe dönüştürdü. Küçük olan tip büyük olana dönüştürülünce değişkenin değeri korunarak tür dönüşümü yapılmış oluyor.
+                </p><br>
+                <p>
+                    Şimdi de açık tip dönüşümlerinden bahsedelim. Bu tip dönüşümlerde programcı kendi isteği ile tür dönüşümünü aktif hale getirir. Peki bu 
+                    nasıl yapılır? Öncelikle tip dönüştürme operatöründen bahsedelim. Bu operatör bildiğimiz parantez operatörüne 
+                    benzer. Fakat parantez operatörünün içerisine tür bilgisi yazıldığında ondan ayrılır. Şu şekilde gösterelim:
+                </p><br>
+                <div class="kodAlani">
+                    <div class="red">int</div> a <div class="red">=</div> 5<div class="red">;</div><br>
+                    <div class="red">int</div> b <div class="red">=</div> 6<div class="red">;</div><br>
+                    <div class="red">double</div> x<div class="red">;</div><br>
+                    x <div class="red">=</div> (<div class="red">double</div>)a <div class="red">+</div> b<div class="red">;</div>
+                </div>
+                <p>Burada gördüğünüz <span class="mark consolas red">double</span> opeartörü bir tip dönüştürme operatörüdür. Yani bu operatör <span class="mark consolas red">tip</span> şeklinde tanımlanır. 
+                    Bu tip temel veri tiplerinden biri olabilir. Bu operatör ile derleyici tür dönüşümüne zorlanır. Yukarıdaki örnekte önce <span class="mark consolas red">int</span> 
+                    türünden olan a değişkeni <span class="mark consolas red">double</span> türüne dönüştürülür. 
+                    Daha sonra <span class="red">+</span> operatörünün iki yanı aynı tip olmadığı için ve <span class="consolas mark red">double</span> tipi 
+                    <span class="mark consolas red">int</span> tipinde büyük olduğu için toplam sonucu 
+                    <span class="mark consolas red">double</span> tipine dönüştürülür. Burada hem kapalı hem de açık tip dönüşümünü görmektesiniz. Eğer atama şu şekilde gerçekleşseydi:
+                </p>
+                <div class="kodAlani">
+                    x <div class="red">=</div> (<div class="red">double</div>) (a <div class="red">+</div> b)<div class="red">;</div>
+                </div>
+                <p>
+                    Bu durumda a+b ifadesinden çıkan <span class="mark consolas red">int</span> tipindeki değer <span class="mark consolas red">double</span> tipine dönüştürülecekti. Yani önce kapalı tip daha sonra açık tip 
+                    dönüşümü gerçekleştirilecekti. Tip dönüştürme operatörünün temel veri tiplerine kullanımı genellikle okunabilirliği arttırmak 
+                    içindir. Çünkü otomatik tip dönüşümü sırasında derleyici genellikle atanan veya işlem gören iki tipin birbirine eşit olmadığı 
+                    uyarısını size vermektedir. Yani bu atamayı yanlışlıkla yaptığınızı varsayar. Tip dönüştürme operatörü ile bu uyarılardan kurtulabilirsiniz. 
+                    Yine bu operatörün sık kullanıldığı alan iki tamsayının birbiriyle bölümünde gerçekleşen kesinti hatalarını ortadan kaldırmaktır. Örneğin:
+                </p>
+                <div class="kodAlani">
+                    <div class="red">int</div> sayi <div class="red">=</div> 10<div class="red">;</div><br>
+                    <div class="red">double</div> sonuc <div class="red">=</div> sayi <div class="red">/</div> 3<div class="red">;</div>
+                </div>
+                <p>
+                    Böyle bir işlemde bu hataya rastlamaktasınız. Bu durumda sonuc değişkeninin değeri <span class="mark consolas blue">3.0</span> olur. Bunu önlemek için şu şekilde atama yapabilirsiniz:
+                </p>
+                <div class="kodAlani">
+                    <div class="red">int</div> sayi <div class="red">=</div> 10<div class="red">;</div><br>
+                    <div class="red">double</div> sonuc <div class="red">=</div> (<div class="red">double</div>) sayi <div class="red">/</div> 3<div class="red">;</div>
+                </div>
+                <p>
+                    Burada önce <span class="mark consolas blue">sayi1 </span> değişkeni double tipinde çevrilecek, daha sonra bölme işleminde kapalı tip dönüşümü ile int türündeki <span class="mark consolas blue">3</span> 
+                    sabiti double türüne dönüştürülecek ve bölme işlemi sorunsuz bir şekilde yapılacaktır. Peki şöyle olsaydı:
+                </p>
+                <div class="kodAlani">
+                    <div class="red">int</div> sayi <div class="red">=</div> 10<div class="red">;</div><br>
+                    <div class="red">double</div> sonuc <div class="red">=</div> (<div class="red">double</div>) (sayi <div class="red">/</div> 3)<div class="red">;</div>
+                </div>
+                <p>
+                    Burada parantez ve önceliklerin ne kadar önemli bir konu olduğunu görüyoruz. Burada sayi1 değişkeni ve <span class="mark consolas blue">3</span> sabiti zaten int türünden olduğundan dönüştürme 
+                    yapılmadan bölüm işlemi gerçekleştirilecek ve 3 değeri çıkacaktır.
+                </p>
             <hr>
             <a href="veriTipi.html">
                 <div class="back">Önceki</div>

@@ -41,8 +41,121 @@
             </ul>
         </div>
         <div class="right">
-            <p>İçerikler Eklenecektir</p>
+            <h1>Tip Dönüşümleri</h1>
             <hr>
+            <p>
+                Veri tipleri konusunda kullanım amaçlarına göre farklı veri tipleri olduğunu görmüştük. 
+                Bu veri tipleri arasında bazen dönüştürme ihtiyacı duymaktayız. Diyelim ki kullanıcıdan bir veri aldık. 
+                Bu veri ile matematiksel işlemler yapmak istiyorsak, <b class="red mark consolas">String</b> tipinde 
+                aldığımız örnek bir veriyi <b class="red mark consolas">int</b> tipine ya da 
+                <b class="red mark consolas">double</b>, <b class="red mark consolas">float</b> gibi veri tiplerine dönüştürmemiz gerekebilir. 
+                Çünkü kullanıcının girdiği sayı, <b class="red mark consolas">String</b> tipinde alınır. Şimdi bu dönüşümleri görelim.
+            </p>
+            <hr>
+            <h1>String tipinden int tipine dönüştürme</h1>
+            <p>
+                Bu dönüştürme işlemi için iki yol vardır. Bunlar <b class="magenta mark consolas">parseInt</b> ve <b class="magenta mark consolas">valueOf</b> metotlarıdır.
+            </p>
+
+            <div class="kodAlani">
+                <div class="red">String</div> ornek <div class="red">=</div> <div class="blue">"5"</div><div class="red">;</div><br>
+                <div class="red">int</div> yeni1 <div class="red">=</div> <div class="red">Integer</div><div class="red">.</div><b class="magenta">parseInt</b>(ornek)<div class="red">;</div><br>
+                <div class="red">int</div> yeni2 <div class="red">=</div> <div class="red">Integer</div><div class="red">.</div><b class="magenta">valueOf</b>(ornek)<div class="red">;</div>
+            </div>
+            <p>
+                <b class="magenta mark consolas">valueOf</b> diğerine göre yavaştır ve <b class="red mark consolas">Integer</b> tipinde bir <b class="blue mark consolas">nesne</b> döndürür.  <br>
+                
+            </p>
+            <p>
+                <b class="magenta mark consolas">parseInt</b> hızlı ve <b class="red mark consolas">int</b> tipinde bir <b class="blue mark consolas">veri</b> döndürür.
+            </p>
+            <hr class="cizgi">
+            <h1>
+                int tipinden String tipine dönüştürme
+            </h1>
+            <p>
+                Bu dönüştürme işlemi için iki yol vardır. Bunlar <b class="magenta mark consolas">toString</b> ve <b class="magenta mark consolas">valueOf</b> metotlarıdır.
+            </p>
+            <div class="kodAlani">
+                <div class="red">int</div> sayi <div class="red">=</div> <div class="blue">5</div><div class="red">;</div><br>
+                <div class="red">int</div> yeni1 <div class="red">=</div> <div class="red">String</div><div class="red">.</div><b class="magenta">toString</b>(sayi)<div class="red">;</div><br>
+                <div class="red">int</div> yeni2 <div class="red">=</div> <div class="red">String</div><div class="red">.</div><b class="magenta">valueOf</b>(sayi)<div class="red">;</div>
+            </div>
+            <p>
+                Yukarıdaki gibi bunda da hız farkları vardır.
+            </p>
+            <hr class="cizgi">
+            <h1>double tipinden int tipine dönüştürme</h1>
+            <p>
+                Bu dönüştürme işlemini virgülden sonraya kalan sayıları yok etmek için kullanacağız. 
+                Çünkü <b class="red mark consolas">int</b> tipi ondalık sayı almıyor fakat <b class="red mark consolas">double</b>, virgüllü sayı almaktadır.
+            </p>
+            <div class="kodAlani">
+                <div class="red">double</div> sayi1 <div class="red">=</div> 34.5<div class="red">;</div><br>
+                <div class="red">int</div> sayi2 <div class="red">=</div> (<div class="red">int</div>)sayi1<div class="red">;</div>
+            </div>
+            <p>
+                <b class="mark consolas">sayi2</b>’nin değeri virgülü attığı için <b class="mark consolas">201</b> olacaktır.
+            </p>
+            <hr class="cizgi">
+            <h1>int tipinden double tipine dönüştürme</h1>
+            <p>
+                <b class="red mark consolas">double</b> virgüllü bir sayı olduğundan dönüştürme sonrası <b class="red mark consolas">int</b> tipinde virgül olmadığı 
+                için virgül ekleyecektir.
+            </p>
+            <div class="kodAlani">
+                <div class="red">int</div> sayi1 <div class="red">=</div> 123<div class="red">;</div><br>
+                <div class="red">double</div> sayi2 <div class="red">=</div> (<div class="red">double</div>)sayi1<div class="red">;</div>
+            </div>
+            <p>
+                <b class="mark consolas">sayi2</b>’nin değeri <b class="mark consolas">123.0</b> olacaktır.
+            </p>
+            <hr class="cizgi">
+            <h1>float tipinden long tipine dönüştürme</h1>
+            <div class="kodAlani">
+                <div class="red">float</div> sayi1 <div class="red">=</div> 32.5f<div class="red">;</div><br>
+                <div class="red">long</div> sayi2 <div class="red">=</div> (<div class="red">long</div>)sayi1<div class="red">;</div>
+            </div>
+            <p>
+                <b class="mark consolas">sayi2</b>’nin değeri <b class="mark consolas">32</b> olacaktır.
+            </p>
+            <hr class="cizgi">
+            <h1>long tipinden float tipine dönüştürme</h1>
+            <div class="kodAlani">
+                <div class="red">long</div> sayi1 <div class="red">=</div> 32<div class="red">;</div><br>
+                <div class="red">float</div> sayi2 <div class="red">=</div> (<div class="red">float</div>)sayi1<div class="red">;</div>
+            </div>
+            <p>
+                <b class="mark consolas">sayi2</b>’nin değeri <b class="mark consolas">32.0</b> olacaktır.
+            </p>
+            <hr class="cizgi">
+            <h1>long tipinden String tipine dönüştürme</h1>
+            <div class="kodAlani">
+                <div class="red">long</div> sayi1 <div class="red">=</div> 32<div class="red">;</div><br>
+                <div class="red">String</div> deger <div class="red">=</div> <div class="red">Long</div>.<b class="magenta">toString</b>(sayi1)<div class="red">;</div>
+            </div>
+            <p>
+                <b class="mark consolas">deger</b>’in değeri <b class="mark consolas">32</b> olacaktır.
+            </p>
+            <hr class="cizgi">
+            <h1>float tipinden String tipine dönüştürme</h1>
+            <div class="kodAlani">
+                <div class="red">float</div> sayi1 <div class="red">=</div> 320f<div class="red">;</div><br>
+                <div class="red">String</div> deger <div class="red">=</div> <div class="red">Float</div>.<b class="magenta">toString</b>(sayi1)<div class="red">;</div>
+            </div>
+            <p>
+                <b class="mark consolas">deger</b>’in değeri <b class="mark consolas">320.0</b> olacaktır.
+            </p>
+            <hr class="cizgi">
+            <h1>byte tipinden String tipine dönüştürme</h1>
+            <div class="kodAlani">
+                <div class="red">byte</div> sayi1 <div class="red">=</div> 10<div class="red">;</div><br>
+                <div class="red">String</div> deger <div class="red">=</div> <div class="red">Byte</div>.<b class="magenta">toString</b>(sayi1)<div class="red">;</div>
+            </div>
+            
+            <p>
+                <b class="mark consolas">deger</b>’in değeri <b class="mark consolas">10</b> olacaktır.
+            </p>
             <a href="veriTipi.html">
                 <div class="back">Önceki</div>
             </a>

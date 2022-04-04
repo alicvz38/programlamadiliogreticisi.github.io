@@ -23,7 +23,10 @@ a{
     display: inline-block;
     color:magenta;
 }
-
+.black{
+    display: inline-block;
+    color:black;
+}
 .consolas{
     font-family: Consolas;
 }
@@ -157,6 +160,20 @@ p::before{
     border-radius: 0.5rem;
     box-shadow: 0.1rem 0.1rem 0.3rem 0.1rem rgba(0,0,0,0.25);
 }
+.kb{
+    width: 80%;
+    margin: 1rem auto;
+    margin-top: 5rem;
+    display: flex;
+    justify-content: space-between;
+}
+.tipler{
+    font-size: 1.4rem;
+}
+.right .operatorler li{
+    font-family: Consolas;
+    color: blue;
+}
 .back, .next{
     box-shadow: 0.2rem 0.2rem 0.5rem 0.2rem rgba(0,0,0,0.5);
     color: black;
@@ -214,6 +231,14 @@ p::before{
 .kodAciklamasi .aciklamalar{
     margin-top: 1rem;
 }
+.aciklamalar .r li{
+    color:red;
+    font-family: consolas;
+}
+.aciklamalar .b li{
+    color:blue;
+    font-family: consolas;
+}
 .kodAciklamasi .aciklamalar::before{
     content:"";
     display: block;
@@ -225,6 +250,45 @@ p::before{
     width: 50%;
     margin: 2rem auto;
     border: 1px solid rgba(0,250,0, 0.25);
+}
+.cizgi{
+    width: 50%;
+    margin: 2rem auto;
+    border: 1px solid rgba(0,250,0, 0.25);
+}
+.cikti{
+    margin-top: 1rem;
+    line-height: 2.5rem;
+}
+table{
+    font-size: 1.8rem;
+    width: 80%;
+    margin: 2rem auto;
+}
+table thead tr th{
+    background: #cff;
+    padding: 1rem;
+    font-family: arial;
+    color: red;
+}
+table tbody tr{
+    transition: 300ms;
+}
+table tbody tr td{
+    padding: 1rem;
+    font-family: arial;
+}
+table tbody tr:hover:nth-child(even){
+    background: #ddd;
+}
+table tbody tr:hover:nth-child(odd){
+    background: #888;
+}
+table tbody tr:nth-child(even){
+    background: #fff;
+}
+table tbody tr:nth-child(odd){
+    background: #bbb;
 }
 .bos{
     display: inline-block;

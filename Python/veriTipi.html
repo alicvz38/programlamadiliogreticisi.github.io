@@ -41,7 +41,79 @@
             </ul>
         </div>
         <div class="right">
-            <p>İçerikler Eklenecektir</p>
+            <h1>Veri Tipi</h1>
+            <hr>
+            <h1>Veri Tipi Nedir?</h1>
+            <p>Veri Tipi programlama dilinde veri tipleri oluşturduğumuz değişkenlerin hangi bellekte 
+                ne kadar alan kaplayacağını ve türde olacağını belirlemek için kullanılmaktadır.
+            </p>
+            <h2 style = "font-size: 24px;">Python Dilindeki <b class="blue">Temel Veri Tipleri </b> Şunlardır</h2>
+            <table border = 1 cellspacing = 0 cellpadding = 10>
+                <thead>
+                    <tr><th>Veri Tipleri</th></tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>int</td>
+                    </tr>
+                    <tr>
+                        <td>float</td>
+                    </tr>
+                    <tr>
+                        <td>str</td>
+                    </tr>
+                    <tr>
+                        <td>bool</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p><span class="mark consolas">Not:</span> Python programlama dili değişkene atanan değere göre veri türünü
+                kendisi otomatik olarak algılamaktadır.</p>
+                <h1>Örnek Olarak</h1>
+                <ul>
+                    <li>Sayısal bir değer girildiğinde <b class="blue">int</b> yani tamsayı</li>
+                    <li>Metinsel bir değer girildiğinde <b class="blue">str</b> yani metin</li>
+                </ul>
+                <h1>Örnek Veri Tiplerinin Kullanımı</h1>
+                <table border= 1 cellspacing = 0 cellpadding = 10 style = "width : 90%;">
+                    <thead>
+                        <tr>
+                            <th>Örnek Kullanım</th>
+                            <th>Açıklaması</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><div class="blue">sayi</div> = <div class="blue">15</div></td>
+                            <td>sayi isimli değişkenin içierisine 15 değeri atandığında tamsayı tipinde bir veri olacaktır.</td>
+                        </tr>
+                        <tr>
+                            <td><div class="blue">sayi</div> = <div class="blue">37.7</div></td>
+                            <td>sayi isimli değişkene 37.7 değeri yani ondalıklı bir değer girildiğinde tipi float olacaktır.</td>
+                        </tr>
+                        <tr>
+                            <td><div class="blue">yazi</div> = <div class="blue">Programlama Dili Ogreticisi</div></td>
+                            <td>yazi isimli değişkene Programlama Dili Ogreticisi değeri atandığında tipi str olacaktır. <br>
+                                çift tırnak veya tek tırnak arasında yazılması önemlidir.</td>
+                        </tr>
+                        <tr>
+                            <td><div class="blue">durum</div> = <div class="blue">true</div></td>
+                            <td>durum isimli değişkene true değeri girildiğinde otomatik olarak bool veri tipi olmaktadır.</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h1>Verinin Tipini Öğrenme</h1>
+                <p>Python programlama dilinde veri tipleri otomatik olarak algılanmaktadır. Fakat biz yinede hangi tipte veya türde 
+                    olduğunu öğrenmek isteyebiliriz. Oluşturulan ve içinde herhangi bir değer atanan değişkenin veri tipini öğrenmek 
+                    için <b class="magenta">type()</b> fonksiyonu kullanılmaktadır.</p>
+                    <div class="kodAlani">
+                        yazi <div class="red">=</div> <div class="blue">"Programlama Dili Ograticisi"</div><br><br>
+                        <div class="magenta">type</div>(yazi)<br>
+                        <div class="green">#veri türünün str olduğunu bize söyleyecektir.</div><br><br>
+                        sayi <div class="red">=</div> 5.12<br><br>
+                        <div class="magenta">type</div>(sayi)<br>
+                        <div class="green">#sayi değişkeninin veri tipinin float olduğu görülecektir</div>
+                    </div>
             <hr>
             <a href="degiskenler.html">
                 <div class="back">Önceki</div>
