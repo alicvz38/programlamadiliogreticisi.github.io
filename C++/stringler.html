@@ -41,7 +41,81 @@
             </ul>
         </div>
         <div class="right">
-            <p>İçerikler Eklenecektir</p>
+            <h1>Stringler</h1>
+            <hr>
+            <p>
+                <b class="red mark consolas">Stringler</b> metin depolamak için kullanılır.
+            </p>
+            <p>
+                Bir <b class="red mark consolas">string</b> değişken, çift tırnak içine alınmış bir karakter koleksiyonu içerir.
+            </p>
+            <div class="kodAlani">
+                <div class="red">string</div> veri <div class="red">=</div> <div class="blue">"Merhaba"</div><div class="red">;</div>
+            </div>
+            <p><b class="red mark consolas">Stringleri</b> kullanabilmemiz için <span class="green">&ltstring&gt</span> kütüphanesine ihtiyacımız vardır.</p>
+            <div class="kodAlani">
+                <div class="green">// string kullanmamız için gereken kütüphane</div><br>
+                <div class="green">#include &ltstring&gt</div><br><br>
+                <div class="red">string</div> veri <div class="red">=</div> <div class="blue">"Merhaba"</div><div class="red">;</div>
+            </div>
+            <h1>İki String'i Birletştirme</h1>
+            <p>İki <b class="red mark consolas">string</b>'i birleştirmek için normal toplamadali gibi aralarına <b class="mark red">+</b> koyarak yapabiliriz.</p>
+            <div class="kodAlani">
+                <div class="red">string</div> fName <div class="red">=</div> <div class="blue">"Merhaba"</div><div class="red">;</div><br>
+                <div class="red">string</div> lName <div class="red">=</div> <div class="blue">"Dunya"</div><div class="red">;</div><br>
+                <div class="red">string</div> full <div class="red">=</div> fName <div class="red">+</div> lName<div class="red">;</div><br>
+                <b class="magenta">cout</b> <div class="red">&lt&lt</div> full<div class="red">;</div>
+            </div>
+            <p>
+                Böyle yazdığımız zaman ekran çıktısında <span class="mark blue">MerhabaDunya</span> olarak çıktı verir. Burada boşluk koymak için de
+                <span class="blue">" "</span> veya <span class="blue">' '</span> kullanırız.
+            </p>
+            <div class="kodAlani">
+                <div class="red">string</div> fName <div class="red">=</div> <div class="blue">"Merhaba"</div><div class="red">;</div><br>
+                <div class="red">string</div> lName <div class="red">=</div> <div class="blue">"Dunya"</div><div class="red">;</div><br>
+                <div class="red">string</div> full <div class="red">=</div> fName <div class="red">+</div> <div class="blue">" "</div> <div class="red">+</div> lName<div class="red">;</div><br>
+                <div class="green">// Ya da şu şekilde</div> <br>
+                <div class="red">string</div> full <div class="red">=</div> fName <div class="red">+</div> <div class="blue">' '</div> <div class="red">+</div> lName<div class="red">;</div><br>
+                <b class="magenta">cout</b> <div class="red">&lt&lt</div> full<div class="red">;</div>
+            </div>
+            <h1>Sayıları ve Stringleri Toplama</h1>
+            <p>
+                İki sayı eklerseniz, sonuç bir sayı olacaktır.
+            </p>
+            <div class="kodAlani">
+                <div class="red">int</div> x <div class="red">=</div> 10<div class="red">;</div><br>
+                <div class="red">int</div> y <div class="red">=</div> 20<div class="red">;</div><br>
+                <div class="red">int</div> z <div class="red">=</div> x <div class="red">+</div> y<div class="red">;</div><br>
+                <div class="green">// z burada 30 olur.</div>
+            </div>
+            <p>
+                İki <b class="mark consolas red">string</b> eklerseniz verileri sırasıyla soldan sağa ekler.
+            </p>
+            <div class="kodAlani">
+                <div class="red">string</div> x <div class="red">=</div> <div class="blue">"10"</div><div class="red">;</div><br>
+                <div class="red">string</div> y <div class="red">=</div> <div class="blue">"20"</div><div class="red">;</div><br>
+                <div class="red">string</div> z <div class="red">=</div> x <div class="red">+</div> y<div class="red">;</div><br>
+                <div class="green">// z burada 1020 olur.</div>
+            </div>
+            <p>
+                Ama bir <b class="red mark consolas">string</b>'e bir sayı veya bir sayıya <b class="red mark consolas">string</b> eklerseniz hata oluşıur.
+            </p>
+            <div class="kodAlani">
+                <div class="red">int</div> x <div class="red">=</div> 10<div class="red">;</div><br>
+                <div class="red">string</div> y <div class="red">=</div> <div class="blue">"20"</div><div class="red">;</div><br>
+                <div class="red">string</div> z <div class="red">=</div> x <div class="red">+</div> y<div class="red">;</div><br>
+                <div class="green">// Burada hata verir. Bundan dolayı değişkenlerin türü aynı olmalıdır.</div>
+            </div>
+            <h1>String uzunluğu</h1>
+            <p>
+                <b class="red mark consolas">string</b>'lerin uzunluğunu bulmak için <b class="magenta">length</b>() veya <b class="magenta">size</b>() kullanabiliriz.
+            </p>
+            <div class="kodAlani">
+                <div class="red">string</div> metin <div class="red">=</div> <div class="blue">"Merhaba Dunya"</div><div class="red">;</div><br>
+                <b class="magenta">cout</b> <div class="red"> &lt&lt </div><div class="blue">"Metnin uzunluğıu : "</div> <div class="red"> &lt&lt </div> metin<div class="red">.</div><b class="magenta">leght</b>()<div class="red">;</div><br>
+                <div class="green">// Ya da</div><br>
+                <b class="magenta">cout</b> <div class="red"> &lt&lt </div><div class="blue">"Metnin uzunluğıu : "</div> <div class="red"> &lt&lt </div> metin<div class="red">.</div><b class="magenta">size</b>()<div class="red">;</div><br>
+            </div>
             <hr>
             <a href="operatorler.html">
                 <div class="back">Önceki</div>

@@ -41,8 +41,50 @@
             </ul>
         </div>
         <div class="right">
-            <p>İçerikler Eklenecektir</p>
+            <h1>Stringler</h1>
             <hr>
+            <p>Stringler, metin/karakter depolamak için kullanılır.</p>
+            <p>Diğer birçok programlama dilinden farklı olarak, C, <b class="mark consolas red">string</b> değişkenlerini kolayca oluşturmak 
+                için bir <b class="mark consolas red">string</b> türüne sahip değildir. Ancak, C'de bir <b class="mark consolas red">string</b> oluşturmak için 
+                <b class="mark consolas red">char</b> türünü kullanırız
+                ve bu karakterleri de bir <b class="blue mark consolas">dizi</b>'de tutarız. Örneğin</p>
+                <div class="kodAlani">
+                    <div class="red">char</div> metin <div class="red">=</div> <div class="blue">"Merhaba Dunya"</div><div class="red">;</div><br>
+                    <b class="magenta">printf</b>(<div class="blue">"%s"</div> , metin)<div class="red">;</div>
+                </div>
+                <p>Metni kullanırken de çift tırnak kullanmalıyız.</p>
+                <p>Çıktı için de <b class="magenta">printf</b>() içinde <span class="blue">"%s"</span> kullanmalıyız.</p>
+                <h1>Erişim Stringleri</h1>
+                <p><b class="mark consolas red">Stringler</b> aslında C'deki dizilerle, bir <b class="mark consolas red">Stringe</b> köşeli parantez içindeki 
+                    <b class="mark consolas blue">dizi</b>'nin numarasına bakarak erişebiliriz. Örneğin</p>
+                    <div class="kodAlani">
+                        <div class="red">char</div> metin <div class="red">=</div> <div class="blue">"Merhaba Dunya"</div><div class="red">;</div><br>
+                        <b class="magenta">prnitf</b>(<div class="blue">"%c"</div>, metin<div class="red">[</div>5<div class="red">]</div>)<div class="red">;</div>
+                    </div>
+                    <div class="kodCiktisi">
+                        <h2 style="color:rgba(0,0,0,0.5);">Ekran Çıktısı</h2>
+                        <hr>
+                        <div class="cikti">
+                            b
+                        </div>
+                    </div>
+                    <p>Tek bir karakter kullanmak için de <span class="blue">"%c"</span> kullanırız.</p>
+                    <h1>String Değiştirme</h1>
+                    <p>
+                        Bir <b class="mark consolas red">String</b>'deki belirli bir karakterin değerini değiştirmek için dizinin numarası brlirlenir ve karakteri değiştirirken de <b>tek tırnak</b> kullanılır.
+                    </p>
+                    <div class="kodAlani">
+                        <div class="red">char</div> metin <div class="red">=</div> <div class="blue">"Merhaba Dunya"</div><div class="red">;</div><br>
+                        metin[0] <div class="red">=</div> <div class="blue">'A'</div><div class="red">;</div><br>
+                        <div class="green">// Burada Aerhaba Dunya çıktısı alırız.</div>
+                    </div>
+                    <h1>String Uzunluğunu Alma</h1>
+                    <p><b class="red mark consolas">String</b> uzunluğunu almak için <b class="magenta">sizeof</b>() kullanırız. Örneğin</p>
+                    <div class="kodAlani">
+                        <div class="red">char</div> metin <div class="red">=</div> <div class="blue">"Merhaba Dunya"</div><div class="red">;</div><br>
+                        <b class="magenta">printf</b>(<div class="blue">"Metnin boyutu : %lu"</div>. <b class="magenta">sizeof</b>(metin))<div class="red">;</div><br>
+                         <div class="green">// 13 ve yukarısı olduğu için "%lu" kullandık. Çıktı olarak da 13 verir.</div>
+                    </div>
             <a href="operatorler.html">
                 <div class="back">Önceki</div>
             </a>

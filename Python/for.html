@@ -41,7 +41,40 @@
             </ul>
         </div>
         <div class="right">
-            <p>İçerikler Eklenecektir</p>
+            <h1>for Döngüsü</h1>
+            <p>
+                Bir kod yazarken kaç kere döngü yapacağımızı biliyorsak <b class="red mark consolas">while</b> döngüsü yerine <b class="red marok consolas">for</b> döngüsünü kullanabiliriz.
+                Kod yapısında ilk parametre döngünün başlangıç yeri, ikinci parametre bitiş yeri ve son parametre de artış miktaridir.
+            </p>
+            <p>
+                Bir kod kümesinde belirli sayıda döngü yapmak için <b class="mark consolas"><b class="magenta">range</b>()</b> işlevini kullanabiliriz.
+            </p>
+            <div class="kodAlani">
+                <div class="green"># Burada x sıfırdan başlayarak 5'e kadar birer birer artırılarak yazdırılır.</div> <br>
+                <div class="red">for</div> x <div class="blue">in</div> <b class="magenta">range</b>(5) <br>
+                <div class="bos"></div><b class="magenta">print</b>(x) <br><br>
+                
+                <div class="green"># Burada x 2'den başlayarak 5'e kadar birer birer artırılarak yazdırılır.</div> <br>
+                <div class="red">for</div> x <div class="blue">in</div> <b class="magenta">range</b>(2<div class="red">,</div> 5) <br>
+                <div class="bos"></div><b class="magenta">print</b>(x) <br><br>
+
+                <div class="green"># Burada x 2'den başlayarak 50'ye kadar üçer üçer artırılarak yazdırılır.</div> <br>
+                <div class="red">for</div> x <div class="blue">in</div> <b class="magenta">range</b>(2<div class="red">,</div> 50<div class="red">,</div> 3) <br>
+                <div class="bos"></div><b class="magenta">print</b>(x)
+            </div>
+            <h1>Dizilerde kullanı</h1>
+            <div class="kodAlani">
+                metinler <div class="red">=</div> <div class="red">[</div><div class="blue">"python"</div><div class="red">,</div> <div class="blue">"java"</div><div class="red">,</div> <div class="blue">"c"</div><div class="red">]</div><br><br>
+                <div class="green">B-# Burada dizide belirlediğimiz verileri alt alta yazdırır.</div><br>
+                <div class="red">for</div> x <div class="blue">in</div> metinler: <br>
+                <div class="bos"></div><b class="magenta">print</b>(metinler)
+            </div>
+            <h1>Kelimede kullanımı</h1>
+            <div class="kodAlani">
+                <div class="green"># Burada da kelimenin harflerini alt alta yazdırır.</div><br>
+                <div class="red">for</div> x <div class="blue">in</div> <div class="blue">"python"</div>: <br>
+                <div class="bos"></div><b class="magenta">print</b>(x)
+            </div>
             <hr>
             <a href="while.html">
                 <div class="back">Önceki</div>

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Diziler</title>
+    <title>Break Continue</title>
     <link rel="stylesheet" href="c.css">
 </head>
 <body>
@@ -41,7 +41,34 @@
             </ul>
         </div>
         <div class="right">
-            <p>İçerikler Eklenecektir</p>
+            <h1>Break Continue</h1>
+            <hr>
+            <h1>Break</h1>
+            <p>
+                Devam etmekte olan döngüde <b class="red mark consolas">break</b> komutu geldiğinde o döngüden çıkar.
+            </p>
+            <div class="kodAlani">
+                <div class="green">// Burada i değerini break komutunu görene kadar 0'dan başlayarak alt alta yazdırır.</div><br>
+                <div class="red">for</div>(<div class="red">int</div> i <div class="red">=</div> 0<div class="red">;</div> i <div class="red">&lt=</div> 10<div class="red">;</div> i<div class="red">++</div>){ <br>
+                <div class="bos"></div><div class="red">if</div>(i <div class="red">==</div> 5){ <br>
+                <div class="bos"></div><div class="bos"></div><b class="magenta">break</b><div class="red">;</div><br>
+                <div class="bos"></div>} <br>
+                <div class="bos"></div><b class="magenta">printf</b>(<div class="blue">"%d \n"</div><div class="red">,</div>i)<div class="red">;</div><br>
+                } <br>
+            </div>
+            <h1>Continue</h1>
+            <p>
+                Devam etmekte olan döngüde <b class="red mark consolas">continue</b> komutu geldiğinde o döngüyü geçip diğer döngüye kaldığı yerden devam eder.
+            </p>
+            <div class="kodAlani">
+                <div class="green">// Burada i değerini 0'dan başlayarak cumtinue komutunu gördüğünde o döngüyü <br>// atlayarak alt alta 10'a kadar yazdırır.</div><br>
+                <div class="red">for</div>(<div class="red">int</div> i <div class="red">=</div> 0<div class="red">;</div> i <div class="red">&lt=</div> 10<div class="red">;</div> i<div class="red">++</div>){ <br>
+                <div class="bos"></div><div class="red">if</div>(i <div class="red">==</div> 5){ <br>
+                <div class="bos"></div><div class="bos"></div><b class="magenta">continue</b><div class="red">;</div><br>
+                <div class="bos"></div>} <br>
+                <div class="bos"></div><b class="magenta">printf</b>(<div class="blue">"%d \n"</div><div class="red">,</div>i)<div class="red">;</div><br>
+                } <br>
+            </div>
             <hr>
             <a href="for.html">
                 <div class="back">Önceki</div>

@@ -41,7 +41,31 @@
             </ul>
         </div>
         <div class="right">
-            <p>İçerikler Eklenecektir</p>
+            <h1>Diziler</h1>
+            <hr>
+            <p>
+                <b class="red mark consolas">Diziler</b>, her bir değer için ayrı değişkenler bildirmek yerine birden çok değeri tek bir değişkende depolamak için kullanılır.
+                <b class="red mark consolas">Diziler</b>, köşeli parantez (<span class="red">[ ]</span>) içinde depolanırlar.
+            </p>
+            <div class="kodAlani">
+                <div class="red">int</div> sayilar<div class="red">[] =</div> <div class="red">[</div>25<div class="red">,</div> 35<div class="red">,</div> 50<div class="red">];</div>
+            </div>
+            <p>
+                <b class="red mark consolas">Dizilerin</b> ilk indisi 0'dan başlar ve o <b class="red mark consolas">dizinin</b> boyutunun 1 eksiğine kadar gider. Verileri ekrana da şöyle yazdırırız.
+            </p>
+            <div class="kodAlani">
+                <div class="red">for</div>(<div class="red">int</div> i <div class="red">=</div> 0<div class="red">;</div> i <div class="red">&lt</div> sayilar<div class="red">.</div><div class="blue">length</div><div class="red">;</div> i<div class="red">++</div>){ <br>
+                <div class="bos"></div>System.<div class="blue"><div class="b"><i><b>out</b></i></div></div>.<b class="magenta">println</b>(sayilar<div class="red">[</div>i<div class="red">]</div>)<div class="red">;</div><br>
+                }
+            </div>
+            <h1>Bir Dizinin Elemanını Değiştir</h1>
+            <p>
+                Üstte belirlediğimiz <b class="red mark consolas">dizinin</b> herhangi bir elemanını değiştirelim.
+            </p>
+            <div class="kodAlani">
+                <div class="green">// Burada dizideki 25 olan sayıyı 10 yaptık.</div><br>
+                sayilar<div class="red">[</div>0<div class="red">] =</div> 10<div class="red">;</div>
+            </div>
             <hr>
             <a href="break_continue.html">
                 <div class="back">Önceki</div>

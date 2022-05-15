@@ -41,7 +41,88 @@
             </ul>
         </div>
         <div class="right">
-            <p>İçerikler Eklenecektir</p>
+            <h1>if - else if - else</h1>
+            <hr>
+            <p>
+                <b class="red mark consolas">if -else if -else</b> koşul gerektiren durumlarda kullanılır. Koşulların durumları şu şekildedir.
+            </p>
+            <table border = 1 cellspacing = 0>
+                <thead>
+                    <tr>
+                        <th>
+                            Durum
+                        </th>
+                        <th>
+                            Açıklama
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>a &gt b</td>
+                        <td>Büyüktür</td>
+                    </tr>
+                    <tr>
+                        <td>a &gt= b</td>
+                        <td>Büyüktür veya eşittir</td>
+                    </tr>
+                    <tr>
+                        <td>a &lt b</td>
+                        <td>Küçüktür</td>
+                    </tr>
+                    <tr>
+                        <td>a &lt= b</td>
+                        <td>Küçüktür veya eşittir</td>
+                    </tr>
+                    <tr>
+                        <td>a == b</td>
+                        <td>Eşittir</td>
+                    </tr>
+                    <tr>
+                        <td>a != b</td>
+                        <td>eşit değildir</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p>
+                Koşulların kullanımı da şu şekildedir.
+            </p>
+            <h1>if</h1>
+            <p>
+                Belirlenen koşul doğru ise işlemi gerçekleştirir.
+            </p>
+            <div class="kodAlani">
+                <div class="red">int</div> sayi <div class="red">=</div> 5<div class="red">;</div><br>
+                <div class="red">if</div>(sayi <div class="red">&gt</div> 0){ <br><div class="bos"></div><div class="bos"></div>
+                System.<div class="blue"><div class="b"><i><b>out</b></i></div></div>.<b class="magenta">println</b>(<div class="blue">"Sayı pozitiftir."</div>)<div class="red">;</div><br>
+                }
+            </div>
+            <h1>else if</h1>
+            <p>
+                <b class="red mark consolas">if</b> koşul gerçekleşmez ise yeni belirlene koşul doğru ise işlemi gerçekleştirir.
+            </p>
+            <div class="kodAlani">
+                <div class="red">int</div> sayi <div class="red">=</div> 5<div class="red">;</div><br>
+                <div class="red">if</div>(sayi <div class="red">&gt</div> 0){ <br><div class="bos"></div><div class="bos"></div>
+                System.<div class="blue"><div class="b"><i><b>out</b></i></div></div>.<b class="magenta">println</b>(<div class="blue">"Sayı pozitiftir."</div>)<div class="red">;</div><br>
+                }<div class="red">else if</div>(sayi &lt 0){ <br><div class="bos"></div><div class="bos"></div>
+                System.<div class="blue"><div class="b"><i><b>out</b></i></div></div>.<b class="magenta">println</b>(<div class="blue">"Sayı negatiftir."</div>)<div class="red">;</div><br>
+                }
+            </div>
+            <h1>else</h1>
+            <p><b class="red mark consolas">if</b> ve <b class="red mark consolas">else if</b> koşulları gerçekleşmediği dulrumlarda buradaki işlemi gerçekleştirir.
+            <b class="red mark consolas">else</b> kullanılırken koşul kullanılmaz.</p>
+            <div class="kodAlani">
+                <div class="red">int</div> sayi <div class="red">=</div> 5<div class="red">;</div><br>
+                <div class="red">if</div>(sayi <div class="red">&gt</div> 0){ <br><div class="bos"></div><div class="bos"></div>
+                System.<div class="blue"><div class="b"><i><b>out</b></i></div></div>.<b class="magenta">println</b>(<div class="blue">"Sayı pozitiftir."</div>)<div class="red">;</div><br>
+                }<div class="red">else if</div>(sayi &lt 0){ <br><div class="bos"></div><div class="bos"></div>
+                System.<div class="blue"><div class="b"><i><b>out</b></i></div></div>.<b class="magenta">println</b>(<div class="blue">"Sayı negatiftir."</div>)<div class="red">;</div><br>
+                }<div class="red">else</div>{ <br><div class="bos"></div><div class="bos"></div>
+                System.<div class="blue"><div class="b"><i><b>out</b></i></div></div>.<b class="magenta">println</b>(<div class="blue">"Sayı sıfırdır."</div>)<div class="red">;</div><br>
+                }
+            </div>
             <hr>
             <a href="durum.html">
                 <div class="back">Önceki</div>

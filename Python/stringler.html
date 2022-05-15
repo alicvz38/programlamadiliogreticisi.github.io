@@ -41,7 +41,95 @@
             </ul>
         </div>
         <div class="right">
-            <p>İçerikler Eklenecektir</p>
+            <h1>Stringler</h1>
+            <p>
+                Python dilinde <b class="red mark consolas">Stringler</b> tek tırnak ya da çift tırnak içinde kullanılabilir.
+            </p>
+            <div class="kodAlani">
+                <b class="magenta">print</b>(<div class="blue">"Merhaba"</div>) <br>
+                <b class="magenta">print</b>(<div class="blue">'Merhaba'</div>)
+            </div>
+            <h1>Bir String'i Bir Değişkene Atama</h1>
+            <div class="kodAlani">
+                a <div class="red">=</div> <div class="blue">"Merhaba"</div><br>
+                <b class="magenta">print</b>(a)
+            </div>
+            <h1>Çok Satırlı Metin Kullanımı</h1>
+            <p>
+                Üç tırnak arasına alt alta yazarak çok satırlı metinler kullanılır.
+            </p>
+            <div class="kodAlani">
+                a <div class="red">=</div> <br> <div class="blue">"""Merhaba Dunya <br> Bu Bir <br> Çok Satırlı Metin Denemesidir"""</div><br>
+                <b class="magenta">print</b>(a)
+            </div>
+            <h1>Bir String Üzerinden Döngü Kullanmak</h1>
+            <p>
+                <b class="red mark consolas">Stringler</b> <b class="blue mark consolas">dizi</b> olduğundan karakterler arasında geçiş yapabilmek için
+            <b class="blue mark consolas">for</b> döngüsü kullanırız.
+            </p>
+            <div class="kodAlani">
+                <div class="green">// Burada harfleri alt alta yazdırır</div><br>
+                <b class="blue">for</b> x <b class="blue">in</b> Merhaba<div class="red">:</div><br>
+                <div class="bos"></div><b class="magenta">print</b>(x)
+            </div>
+            <h1>
+                String Uzunluğu
+            </h1>
+            <p>
+                <b class="red mark consolas">String</b>'lerin uzunluğunu bulmak için <b class="magenta">len</b>() kullanabiliriz.
+            </p>
+            <div class="kodAlani">
+                a <div class="red">=</div> <div class="blue">"Merhaba"</div><br>
+                <b class="magenta">print</b>(<b class="magneta">len</b>(a))
+            </div>
+            <h1>Harfleri Büyük veya Küçük Yapma</h1>
+            <p>
+                Harfleri büyük yapmak için <b class="magenta">upper</b>() ve küçük yapmak için de <b class="magenta">lower</b>() kullanırız.
+            </p>
+            <div class="kodAlani">
+                a <div class="red">=</div> <div class="blue">Merhaba</div><br>
+                <div class="green">// MERHABA diye yazdırır.</div><br>
+                <b class="magenta">print</b>(a<div class="red">.</div><b class="magenta">upper</b>()) <br>
+                <div class="green">// merhaba diye yazdırır.</div><br>
+                <b class="magenta">print</b>(a<div class="red">.</div><b class="magenta">lower</b>())
+            </div>
+            <h1>Boşlukları Kaldırma</h1>
+            <p>
+                Boşlukları kaldırmak için <b class="magenta">strip</b>() kullanırız.
+            </p>
+            <div class="kodAlani">
+                a <div class="red">=</div> <div class="blue">" Merhaba "</div><br>
+                <b class="magenta">print</b>(a<div class="red">.</div><b class="magenta">strip</b>()) <br>
+                <div class="green">// " Merhaba " dan "Merhaba" ya dönüşür</div>
+            </div>
+            <h1>String'de Değişiklik Yapma</h1>
+            <p>
+                <b class="red mark consolas">String</b>'de değişiklik yapmak için <b class="magenta">replace</b>() kullanırız.
+            </p>
+            <div class="kodAlani">
+                a <div class="red">=</div> <div class="blue">"Merhaba"</div><br>
+                <b class="magenta">print</b>(a<div class="red">.</div><b class="magenta">replace</b>(<div class="blue">"M"</div>, <b class="blue">"H"</b>))
+                <div class="green">// Ekran çıktısı olarak Herhaba verir.</div>
+            </div>
+            <h1>İki String'i Toplama</h1>
+            <p>
+                İki <b class="red mark consolas">String</b>'i toplamak için <b class="red mark">+</b> kullanırız.
+            </p>
+            <div class="kodAlani">
+                a <div class="red">=</div> <div class="blue">"Merhaba"</div><br>
+                b <div class="red">=</div> <div class="blue">"Dunya"</div><br>
+                c <div class="red">=</div> a <div class="red">+</div> b <br>
+                <b class="magenta">print</b>(c) <div class="green">// Ekran çıktısı olarak MerhabaDunya verir.</div>
+            </div>
+            <p>
+                Aralarına boşluk koymak için <b class="blue">" "</b> kullanırız.
+            </p>
+            <div class="kodAlani">
+                a <div class="red">=</div> <div class="blue">"Merhaba"</div><br>
+                b <div class="red">=</div> <div class="blue">"Dunya"</div><br>
+                c <div class="red">=</div> a <div class="red">+</div> <div class="blue">" "</div> <div class="red">+</div> b <br>
+                <b class="magenta">print</b>(c) <div class="green">// Ekran çıktısı olarak Merhaba Dunya verir.</div>
+            </div>
             <hr>
             <a href="operatorler.html">
                 <div class="back">Önceki</div>

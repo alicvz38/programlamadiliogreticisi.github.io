@@ -41,7 +41,28 @@
             </ul>
         </div>
         <div class="right">
-            <p>İçerikler Eklenecektir</p>
+            <h1>Switch case</h1>
+            <hr>
+            <p>
+                <b class="red mark consolas">if else</b> yapısına benzer olarak <b class="red mark consolas">switch case</b> de kullanılabilir.
+            </p>
+            <div class="kodAlani">
+                <div class="green"># Burada altta belirlediğimiz fonksiyonu gerçekleştiriyoruz.</div><br>
+                <div class="blue">def</div> <b class="magenta">kontrol</b>(gun): <br>
+                <div class="bos"></div>switcher <div class="red">=</div> { <br>
+                <div class="bos"></div><div class="bos"></div> <div class="blue">1: "Pazartesi"</div><div class="red">,</div> <br>
+                <div class="bos"></div><div class="bos"></div> <div class="blue">2: "Salı"</div><div class="red">,</div> <br>
+                <div class="bos"></div><div class="bos"></div> <div class="blue">3: "Çarşamba"</div><div class="red">,</div> <br>
+                <div class="bos"></div><div class="bos"></div> <div class="blue">4: "Perşembe"</div><div class="red">,</div> <br>
+                <div class="bos"></div><div class="bos"></div> <div class="blue">5: "Cuma"</div><div class="red">,</div> <br>
+                <div class="bos"></div><div class="bos"></div> <div class="blue">6: "Cumartesi"</div><div class="red">,</div> <br>
+                <div class="bos"></div><div class="bos"></div> <div class="blue">7: "Pazar"</div><div class="red">,</div> <br>
+                <div class="bos"></div>} <br><br>
+                <div class="bos"></div><div class="green"># Seçilen gün hatalı ise Hatalı gün seçildi diye çıktı verir.</div><br>
+                <div class="bos"></div><div class="red">return</div> switcher<div class="red">.</div><div class="magenta">get</div>(gun<div class="red">,</div> <div class="blue">"Hatalı gün seçildi"</div>) <br><br>
+                gun <div class="red">=</div> 4 <br>
+                <b class="magenta">print</b>(<b class="magenta">kontrol</b>(gun))
+            </div>
             <hr>
             <a href="if_else.html">
                 <div class="back">Önceki</div>

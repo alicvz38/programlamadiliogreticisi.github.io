@@ -41,7 +41,85 @@
             </ul>
         </div>
         <div class="right">
-            <p>İçerikler Eklenecektir</p>
+            <h1>Diziler</h1>
+            <hr>
+            <p>
+                <b class="red mark consolas">Diziler</b>, her bir değer için ayrı değişkenler bildirmek yerine birden çok değeri tek bir değişkende depolamak için kullanılır.
+                <b class="red mark consolas">Diziler</b>, köşeli parantez (<span class="red">[ ]</span>) içinde depolanırlar.
+            </p>
+            <div class="kodAlani">
+                sayilar <div class="red">=</div> <div class="red">[</div>25<div class="red">,</div> 35<div class="red">,</div> 50<div class="red">]</div>
+            </div>
+            <p>
+                <b class="red mark consolas">Dizilerin</b> ilk indisi 0'dan başlar ve o <b class="red mark consolas">dizinin</b> boyutunun 1 eksiğine kadar gider. Verileri ekrana da şöyle yazdırırız.
+            </p>
+            <div class="kodAlani">
+                <div class="red">for</div> i <div class="blue">in</div> sayilar: <br>
+                <div class="bos"></div><b class="magenta">print</b>(i)
+            </div>
+            <h1>Bir Dizinin Elemanını Değiştir</h1>
+            <p>
+                Üstte belirlediğimiz <b class="red mark consolas">dizinin</b> herhangi bir elemanını değiştirelim.
+            </p>
+            <div class="kodAlani">
+                <div class="green"># Burada dizideki 25 olan sayıyı 10 yaptık.</div><br>
+                sayilar<div class="red">[</div>0<div class="red">] =</div> 10
+            </div>
+            <h1>Bazı Dizi Metotları</h1>
+            <table border = 1 cellspacing = 0 style = "width: 75%;">
+                <thead>
+                    <tr>
+                        <th>Metot</th>
+                        <th>Açıklama</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>append()</td>
+                        <td>Dizinin sonuna yeni eleman ekler</td>
+                    </tr>
+                    <tr>
+                        <td>clear()</td>
+                        <td>Dizideki tüm elemanları kaldırır</td>
+                    </tr>
+                    <tr>
+                        <td>copy()</td>
+                        <td>Listenin bir kopyasını döndürür</td>
+                    </tr>
+                    <tr>
+                        <td>count()</td>
+                        <td>Belirtilen değere sahip öğelerin sayısını döndürür</td>
+                    </tr>
+                    <tr>
+                        <td>extend()</td>
+                        <td>Bir listenin öğelerini mevcut listenin sonuna ekler</td>
+                    </tr>
+                    <tr>
+                        <td>index()</td>
+                        <td>Belirtilen değere sahip öğenin dizinini döndürür</td>
+                    </tr>
+                    <tr>
+                        <td>inset()</td>
+                        <td>Belirtilen konuma bir eleman ekler</td>
+                    </tr>
+                    <tr>
+                        <td>pop()</td>
+                        <td>Belirtilen konumdaki öğeyi kaldırır</td>
+                    </tr>
+                    <tr>
+                        <td>remove()</td>
+                        <td>Belirtilen değere sahip ilk öğeyi kaldırır</td>
+                    </tr>
+                    <tr>
+                        <td>reverse()</td>
+                        <td>Listenin sırasını tersine çevirir</td>
+                    </tr>
+                    <tr>
+                        <td>sort()</td>
+                        <td>Listeyi sıralar</td>
+                    </tr>
+                </tbody>
+            </table>
             <hr>
             <a href="break_continue.html">
                 <div class="back">Önceki</div>
