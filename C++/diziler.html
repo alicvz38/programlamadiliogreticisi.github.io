@@ -48,13 +48,15 @@
                 <b class="red mark consolas">Diziler</b>, köşeli parantez (<span class="red">[ ]</span>) içinde depolanırlar.
             </p>
             <div class="kodAlani">
-                <div class="red">int</div> sayilar<div class="red">[] =</div> <div class="red">[</div>25<div class="red">,</div> 35<div class="red">,</div> 50<div class="red">];</div>
+                <div class="red">int</div> sayilar<div class="red">[] =</div> <div class="red">{</div>25<div class="red">,</div> 35<div class="red">,</div> 50<div class="red">};</div>
             </div>
             <p>
                 <b class="red mark consolas">Dizilerin</b> ilk indisi 0'dan başlar ve o <b class="red mark consolas">dizinin</b> boyutunun 1 eksiğine kadar gider. Verileri ekrana da şöyle yazdırırız.
+                Sayılar dizisinin boyutunu almak için de <b class="mark consolas"><b class="magenta">sizeof</b>(sayilar)<span class="red"> / </span><span class="red"> <b class="magenta">sizeof</b>(<span class="red">*</span>sayilar)</b>
+                kullanırız.
             </p>
             <div class="kodAlani">
-                <div class="red">for</div>(<div class="red">int</div> i <div class="red">=</div> 0<div class="red">;</div> i <div class="red">&lt</div> sayilar<div class="red">.</div><div class="blue">length</div><div class="red">;</div> i<div class="red">++</div>){ <br>
+                <div class="red">for</div>(<div class="red">int</div> i <div class="red">=</div> 0<div class="red">;</div> i <div class="red">&lt</div> <b class="magenta">sizeof</b>(sayilar)<div class="red"> / </div><div class="red"> <b class="magenta">sizeof</b>(<div class="red">*</div>sayilar);</div> i<div class="red">++</div>){ <br>
                 <div class="bos"></div><div class="bos"></div><b class="magenta">cout</b> <div class="red">&lt&lt</div> sayilar<div class="red">[</div>i<div class="red">]</div> <div class="red">&lt&lt</div> <b class="magenta">endl</b><div class="red">;</div><br>
                 }
             </div>
